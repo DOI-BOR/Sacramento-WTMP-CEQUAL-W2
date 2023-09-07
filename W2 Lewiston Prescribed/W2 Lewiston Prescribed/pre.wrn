@@ -1,0 +1,4 @@
+MET Warning: Check cloud cover since average [CloudCoverAverage:  1.482] < 3.0 [Note that CLOUD should be between 0-10] for WB:  1 in TrinityCamp_met.csv                                                     
+Structure 1 selective withdrawal bottom layer [KBSTR=21] < bottom active layer [KB=32] in branch 1
+Bottom selective withdrawal layer [KBWD=23] < bottom active layer [KB=32] for withdrawal 1
+Bottom selective withdrawal layer [KBWD=12] < bottom active layer [KB=40] for withdrawal 3

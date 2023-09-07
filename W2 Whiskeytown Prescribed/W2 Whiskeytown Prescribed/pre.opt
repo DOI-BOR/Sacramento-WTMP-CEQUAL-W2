@@ -206,17 +206,17 @@ Inflow/Outflow
    w2_constriction.csv read in and used during simulation.      # of constrictions:    1
  
    Waterbody 1
-     Bathymetry           = WhiskeytownL_bthy_upd9.npt                                              
-     Meteorology          = met_PST_17.npt                                                          
+     Bathymetry           = Whiskeytown_bathy.npt                                                   
+     Meteorology          = met_PST.npt                                                             
      Vertical profile     = vpr.npt                                                                 
      Longitudinal profile = lpr.npt                                                                 
    Branch 1
-     Inflow                               = qin_JCrPH_br1_17.npt                                                    
-     Inflow temperature                   = tin_JCrPH_br1_17.npt                                                    
+     Inflow                               = Qin_JCrPH_br1.npt                                                       
+     Inflow temperature                   = tin_JCrPH_br1.npt                                                       
      Inflow concentrations                = cin_br1.csv                                                             
-     Outflow                              = Qout_SCrT_br1_17.npt                                                    
-     Distributed tributary inflows        = qdt_dlyupd3_br1only_17.npt                                              
-     Distributed tributary temperatures   = tdt_br1_alt2_17.npt                                                     
+     Outflow                              = Qout_SCrT_br1.npt                                                       
+     Distributed tributary inflows        = qdt_br1.npt                                                             
+     Distributed tributary temperatures   = tdt_br1.npt                                                             
      Distributed tributary concentrations = cdt_br1.npt                                                             
      Precipitation                        = pre_br1.npt                                                             
      Precipitation temperatures           = tpr_br1.npt                                                             
@@ -228,12 +228,12 @@ Inflow/Outflow
      Downstream head temperatures         = tdh_br1.npt                                                             
      Downstream head concentrations       = cdh_br1.npt                                                             
    Branch 2
-     Inflow                               = qin_br2_17.npt                                                          
-     Inflow temperature                   = tin_br2_17.npt                                                          
+     Inflow                               = qin_br2.npt                                                             
+     Inflow temperature                   = tin_br2.npt                                                             
      Inflow concentrations                = -                                                                       
-     Outflow                              = Qout_br2_17.npt                                                         
-     Distributed tributary inflows        = qdt_br2_17.npt                                                          
-     Distributed tributary temperatures   = tdt_br2_17.npt                                                          
+     Outflow                              = Qout_br2.npt                                                            
+     Distributed tributary inflows        = qdt_br2.npt                                                             
+     Distributed tributary temperatures   = tdt_br2.npt                                                             
      Distributed tributary concentrations = -                                                                       
      Precipitation                        = -                                                                       
      Precipitation temperatures           = -                                                                       
@@ -245,12 +245,12 @@ Inflow/Outflow
      Downstream head temperatures         = -                                                                       
      Downstream head concentrations       = -                                                                       
    Branch 3
-     Inflow                               = qin_br3_17.npt                                                          
-     Inflow temperature                   = tin_br3_17.npt                                                          
+     Inflow                               = qin_br3.npt                                                             
+     Inflow temperature                   = tin_br3.npt                                                             
      Inflow concentrations                = not                                                                     
-     Outflow                              = qout_br3_Cal_2017.csv                                                   
-     Distributed tributary inflows        = qdt_br3_17.npt                                                          
-     Distributed tributary temperatures   = tdt_br3_17.npt                                                          
+     Outflow                              = Qout_br3.csv                                                            
+     Distributed tributary inflows        = qdt_br3.npt                                                             
+     Distributed tributary temperatures   = tdt_br3.npt                                                             
      Distributed tributary concentrations = not                                                                     
      Precipitation                        = not                                                                     
      Precipitation temperatures           = not                                                                     
@@ -262,12 +262,12 @@ Inflow/Outflow
      Downstream head temperatures         = not                                                                     
      Downstream head concentrations       = not                                                                     
    Branch 4
-     Inflow                               = qin_br4_17.npt                                                          
-     Inflow temperature                   = tin_br4_alt_17.npt                                                      
+     Inflow                               = qin_br4.npt                                                             
+     Inflow temperature                   = tin_br4.npt                                                             
      Inflow concentrations                = used                                                                    
-     Outflow                              = Qout_br4_17.npt                                                         
-     Distributed tributary inflows        = qdt_br4_17.npt                                                          
-     Distributed tributary temperatures   = tdt_br4_17.npt                                                          
+     Outflow                              = Qout_br4.npt                                                            
+     Distributed tributary inflows        = qdt_br4.npt                                                             
+     Distributed tributary temperatures   = tdt_br4.npt                                                             
      Distributed tributary concentrations = used                                                                    
      Precipitation                        = used                                                                    
      Precipitation temperatures           = used                                                                    
@@ -288,7 +288,7 @@ Inflow/Outflow
      Snapshot     = snp.opt                                                                 
      Fluxes       = flx.opt                                                                 
      Profile      = prf.opt                                                                 
-     Vector plot  = WhiskeytownL.w2l                                                        
+     Vector plot  = Whiskeytown.w2l                                                         
      Contour plot = cpl.opt                                                                 
 
  Water Balance Summary
