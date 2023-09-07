@@ -1,0 +1,8 @@
+Cell width [B(39,56)=26.038] < or > 10X width [B(39,57)=432.881]
+MET Warning: Check cloud cover since average [CloudCoverAverage:  1.482] < 3.0 [Note that CLOUD should be between 0-10] for WB:  1 in TrinityCamp_met.csv                                                     
+Water surface elevation is below bottom elevation at segment 1
+Water surface elevation is below bottom elevation at segment 2
+Water surface elevation is below bottom elevation at segment 54
+Water surface elevation is below bottom elevation at segment 55
+Water surface elevation is below bottom elevation at segment 60
+Water surface elevation is below bottom elevation at segment 61
