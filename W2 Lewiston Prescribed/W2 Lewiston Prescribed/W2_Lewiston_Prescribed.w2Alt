@@ -5,7 +5,7 @@
     <DataLocation Name="Branch 1 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:Lewiston_qin.csv/Branch 1 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 1 Inflow/" ComputeType="Computed" Model="CeQualW2-W2 Trinity Prescribed" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="Seg 52 Withdrawal" Class="hec2.model.DataLocation" DssPath="/W2:qwo_52.csv/Seg 52 Withdrawal/Flow-QWD//1HOUR/W2 5-Res P:2016:CeQualW2-W2 Trinity Prescribed/" ComputeType="Computed" Parameter="Flow-QWD" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="Seg 52 Withdrawal" Class="hec2.model.DataLocation" DssPath="/W2:qwo_52.csv/Seg 52 Withdrawal/Flow-QWD//1HOUR/W2 5-Res P:2018:CeQualW2-W2 Trinity Prescribed/" ComputeType="Computed" Parameter="Flow-QWD" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="W2 Trinity Prescribed" Program="CeQualW2" />
         </DataLocation>
       </DownStreamLocation>
@@ -13,7 +13,7 @@
     <DataLocation Name="Branch 1 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:Lew_Br1_Tin.csv/Branch 1 Inflow/Temp-TIN//1HOUR/alt:ap:CeQualW2-Branch 1 Inflow/" ComputeType="Computed" Model="Scripting-OutputLink_W2-Trinity-W2-Lewiston_SacTrn" Parameter="Temp-TIN" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="TrinityW2_FWA_Filt" Class="hec2.model.DataLocation" DssPath="//TrinityW2_FWA_Filt/Temp//1HOUR/W2 5-Res P:2016:Scripting-OutputLink_W2-Trinity-/" ComputeType="Computed" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="TrinityW2_FWA_Filt" Class="hec2.model.DataLocation" DssPath="//TrinityW2_FWA_Filt/Temp//1HOUR/W2 5-Res P:2018:Scripting-OutputLink_W2-Trinity-/" ComputeType="Computed" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="OutputLink_W2-Trinity-W2-Lewiston_SacTrn" Program="Scripting" />
         </DataLocation>
       </DownStreamLocation>
