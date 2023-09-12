@@ -202,20 +202,20 @@ Inflow/Outflow
  Input Filenames
    Control    = w2_con.csv                                                              
    Restart    = rso150.opt                                                              
-   Withdrawal = Lewiston_qwd.csv                                                        
+   Withdrawal = Lewiston2017_qwd.csv                                                    
  
    Waterbody 1
-     Bathymetry           = Lewiston_bathy.csv                                                      
-     Meteorology          = TrinityCamp_met.csv                                                     
+     Bathymetry           = Lewiston_bth_0.5m_updated3.csv                                          
+     Meteorology          = TrinityCamp2017_met.csv                                                 
      Vertical profile     = vpr.npt                                                                 
      Longitudinal profile = lpr.npt                                                                 
    Branch 1
-     Inflow                               = Lewiston_qin.csv                                                        
-     Inflow temperature                   = Lew_Br1_Tin.csv                                                         
+     Inflow                               = Lewiston2017_qin.csv                                                    
+     Inflow temperature                   = Lew_Br1_Tin_2017.csv                                                    
      Inflow concentrations                = cin_br1.npt                                                             
-     Outflow                              = Lewiston_qot.csv                                                        
-     Distributed tributary inflows        = Lewiston_qdt_1.csv                                                      
-     Distributed tributary temperatures   = Lewiston_tdt.csv                                                        
+     Outflow                              = Lewiston2017_qot.csv                                                    
+     Distributed tributary inflows        = Lewiston2017_qdt_1.csv                                                  
+     Distributed tributary temperatures   = Lewiston2017_tdt.csv                                                    
      Distributed tributary concentrations = cdt_br1.npt                                                             
      Precipitation                        = pre_br1.npt                                                             
      Precipitation temperatures           = tpr_br1.npt                                                             
@@ -264,7 +264,7 @@ Inflow/Outflow
  Output Filenames
    Error       = pre.err                                                                 
    Warning     = pre.wrn                                                                 
-   Time series = tsr_Lew.csv                                                             
+   Time series = tsr_Lew2017.csv                                                         
    Withdrawal  = wdo.csv                                                                 
    Waterbody 1
      Snapshot     = snp.opt                                                                 

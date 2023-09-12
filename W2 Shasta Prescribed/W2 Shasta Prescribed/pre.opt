@@ -257,17 +257,17 @@ Inflow/Outflow
    Restart    =                                                                         
    Withdrawal =                                                                         
    Waterbody 1
-     Bathymetry           = Shasta_Lake_bthy_2017.npt                                               
-     Meteorology          = met_PST_17.npt                                                          
-     Vertical profile     = Vpr_17.npt                                                              
+     Bathymetry           = Shasta_Lake_bathy.npt                                                   
+     Meteorology          = met_PST.npt                                                             
+     Vertical profile     = Vpr.npt                                                                 
      Longitudinal profile = lpr.npt - not used                                                      
    Branch 1
-     Inflow                               = qin_br1_17.npt                                                          
-     Inflow temperature                   = tin_br1_17.npt                                                          
+     Inflow                               = qin_br1.npt                                                             
+     Inflow temperature                   = tin_br1.npt                                                             
      Inflow concentrations                = cin_br1.npt - not used                                                  
-     Outflow                              = Qout_17_051822.npt                                                      
-     Distributed tributary inflows        = qdt_br1_17_092921_upd.npt                                               
-     Distributed tributary temperatures   = tdt_br1_17.npt                                                          
+     Outflow                              = Qout.npt                                                                
+     Distributed tributary inflows        = Qdt_br1.npt                                                             
+     Distributed tributary temperatures   = tdt_br1.npt                                                             
      Distributed tributary concentrations = cdt_br1.npt - not used                                                  
      Precipitation                        = pre_br1.npt - not used                                                  
      Precipitation temperatures           = tpr_br1.npt - not used                                                  
@@ -279,8 +279,8 @@ Inflow/Outflow
      Downstream head temperatures         = tdh_br1.npt - not used                                                  
      Downstream head concentrations       = cdh_br1.npt - not used                                                  
    Branch 2
-     Inflow                               = qin_br2_17_upd.npt                                                      
-     Inflow temperature                   = tin_br2_17.npt                                                          
+     Inflow                               = qin_br2.npt                                                             
+     Inflow temperature                   = tin_br2.npt                                                             
      Inflow concentrations                = cin_br2.npt - not used                                                  
      Outflow                              = qot_br2.npt - not used                                                  
      Distributed tributary inflows        = qin_br2.npt - not used                                                  
@@ -296,8 +296,8 @@ Inflow/Outflow
      Downstream head temperatures         = tdh_br2.npt - not used                                                  
      Downstream head concentrations       = cdh_br2.npt - not used                                                  
    Branch 3
-     Inflow                               = qin_br3_17.npt                                                          
-     Inflow temperature                   = tin_br3_17.npt                                                          
+     Inflow                               = qin_br3.npt                                                             
+     Inflow temperature                   = tin_br3.npt                                                             
      Inflow concentrations                = cin_br3.npt - not used                                                  
      Outflow                              = qot_br3.npt - not used                                                  
      Distributed tributary inflows        = qin_br3.npt - not used                                                  
@@ -313,8 +313,8 @@ Inflow/Outflow
      Downstream head temperatures         = tdh_br3.npt - not used                                                  
      Downstream head concentrations       = cdh_br3.npt - not used                                                  
    Branch 4
-     Inflow                               = qin_br4_17.npt                                                          
-     Inflow temperature                   = tin_br4_17.npt                                                          
+     Inflow                               = qin_br4.npt                                                             
+     Inflow temperature                   = tin_br4.npt                                                             
      Inflow concentrations                = cin_br4.npt - not used                                                  
      Outflow                              = qot_br4.npt - not used                                                  
      Distributed tributary inflows        = qin_br4.npt - not used                                                  
@@ -330,8 +330,8 @@ Inflow/Outflow
      Downstream head temperatures         = tdh_br4.npt - not used                                                  
      Downstream head concentrations       = cdh_br4.npt - not used                                                  
    Branch 5
-     Inflow                               = qin_br5_17.npt                                                          
-     Inflow temperature                   = tin_br5_17.npt                                                          
+     Inflow                               = qin_br5.npt                                                             
+     Inflow temperature                   = tin_br5.npt                                                             
      Inflow concentrations                = cin_br5.npt - not used                                                  
      Outflow                              = qot_br5.npt - not used                                                  
      Distributed tributary inflows        = qin_br5.npt - not used                                                  
@@ -356,7 +356,7 @@ Inflow/Outflow
      Snapshot     = snp.opt                                                                 
      Fluxes       = flx.opt - not used                                                      
      Profile      = prf.opt                                                                 
-     Vector plot  = vpl_17.w2l                                                              
+     Vector plot  = vpl.opt - not used                                                      
      Contour plot = cpl1.opt                                                                
 
  Water Balance Summary

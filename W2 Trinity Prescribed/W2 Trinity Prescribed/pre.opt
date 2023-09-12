@@ -203,7 +203,7 @@ Inflow/Outflow
         4                0
      Branch 1
        Structure   Type   Width (m)   Elevation (m)   Bottom Layer
-           1       POINT ********        722.4           134
+           1       POINT ********        722.4           135
    Number of withdrawals [NWD] = 2
      segment number [IWD] =  52 52
    Number of tributaries [NTR] = 1
@@ -220,20 +220,20 @@ Inflow/Outflow
  Input Filenames
    Control    = w2_con.csv                                                              
    Restart    = rso150.opt                                                              
-   Withdrawal = Trinity_qwd.csv                                                         
+   Withdrawal = Trinity2017_qwd.csv                                                     
  
    Waterbody 1
-     Bathymetry           = Trinity_bathy.csv                                                       
-     Meteorology          = TrinityCamp_met.csv                                                     
+     Bathymetry           = Trinity_bth_1m.csv                                                      
+     Meteorology          = TrinityCamp2017_met.csv                                                 
      Vertical profile     = vpr.csv                                                                 
      Longitudinal profile = lpr.npt                                                                 
    Branch 1
-     Inflow                               = TRI_Br1_qin.csv                                                         
-     Inflow temperature                   = TRI_Br1_Tw.csv                                                          
+     Inflow                               = TRI_Br1_2017_qin.csv                                                    
+     Inflow temperature                   = TRI_Br1_2017_Tw.csv                                                     
      Inflow concentrations                = cin_br1.npt                                                             
-     Outflow                              = Trinity_qot.csv                                                         
-     Distributed tributary inflows        = Trinity_qdt_1.csv                                                       
-     Distributed tributary temperatures   = Trinity_tdt.csv                                                         
+     Outflow                              = Trinity2017_qot.csv                                                     
+     Distributed tributary inflows        = Trinity2017_qdt_1.csv                                                   
+     Distributed tributary temperatures   = Trinity2017_tdt.csv                                                     
      Distributed tributary concentrations = cdt_br1.npt                                                             
      Precipitation                        = pre_br1.npt                                                             
      Precipitation temperatures           = tpr_br1.npt                                                             
@@ -245,8 +245,8 @@ Inflow/Outflow
      Downstream head temperatures         = tdh_br1.npt                                                             
      Downstream head concentrations       = cdh_br1.npt                                                             
    Branch 2
-     Inflow                               = TRI_Br2_qin.csv                                                         
-     Inflow temperature                   = TRI_Br2_Tw.csv                                                          
+     Inflow                               = TRI_Br2_2017_qin.csv                                                    
+     Inflow temperature                   = TRI_Br2_2017_Tw.csv                                                     
      Inflow concentrations                = cin_br2.npt                                                             
      Outflow                              = qot_br2.npt                                                             
      Distributed tributary inflows        = qdt_br2.npt                                                             
@@ -262,8 +262,8 @@ Inflow/Outflow
      Downstream head temperatures         = tdh_br2.npt                                                             
      Downstream head concentrations       = cdh_br2.npt                                                             
    Branch 3
-     Inflow                               = TRI_Br3_qin.csv                                                         
-     Inflow temperature                   = TRI_Br3_Tw.csv                                                          
+     Inflow                               = TRI_Br3_2017_qin.csv                                                    
+     Inflow temperature                   = TRI_Br3_2017_Tw.csv                                                     
      Inflow concentrations                = cin_br3.npt                                                             
      Outflow                              = qot_br3.npt                                                             
      Distributed tributary inflows        = qdt_br3.npt                                                             
@@ -279,8 +279,8 @@ Inflow/Outflow
      Downstream head temperatures         = tdh_br3.npt                                                             
      Downstream head concentrations       = cdh_br3.npt                                                             
    Branch 4
-     Inflow                               = TRI_Br4_qin.csv                                                         
-     Inflow temperature                   = TRI_Br4_Tw.csv                                                          
+     Inflow                               = TRI_Br4_2017_qin.csv                                                    
+     Inflow temperature                   = TRI_Br4_2017_Tw.csv                                                     
      Inflow concentrations                = cin_br3.npt                                                             
      Outflow                              = qot_br3.npt                                                             
      Distributed tributary inflows        = qdt_br3.npt                                                             
@@ -296,36 +296,36 @@ Inflow/Outflow
      Downstream head temperatures         = tdh_br3.npt                                                             
      Downstream head concentrations       = cdh_br3.npt                                                             
    Tributary 1
-     Inflow               = SwiftCreek_flow.csv                                                     
-     Inflow temperature   = SwiftCreek_Tw.csv                                                       
+     Inflow               = SwiftCreek_flow_2017.csv                                                
+     Inflow temperature   = SwiftCreek_Tw_2017.csv                                                  
      Inflow concentration = ctr_tr1.npt                                                             
 
  Output Filenames
    Error       = pre.err                                                                 
    Warning     = pre.wrn                                                                 
-   Time series = tsr_TRI_1m.csv                                                          
+   Time series = tsr_TRI2017_1m.csv                                                      
    Withdrawal  = wdo.csv                                                                 
    Waterbody 1
      Snapshot     = snp.opt                                                                 
      Fluxes       = flx.opt                                                                 
      Profile      = prf.opt                                                                 
-     Vector plot  = Trinity.w2l                                                             
+     Vector plot  = Trinity2017.w2l                                                         
      Contour plot = cpl.opt                                                                 
 
  Water Balance Summary
    Waterbody 1
       total inflows     total outflows
     average  maximum   average  maximum
-      73.42   900.90     54.28   257.88
+     119.99   900.90     54.28   257.88
 
      Branch 1
        Inflows
               total
          average  maximum
-            44.32   900.90
+            95.85   900.90
              upstream         tributaries     distributed tributaries     precipitation
          average  maximum   average  maximum      average  maximum      average  maximum
-           37.17   500.01      8.89   109.22        -1.74   900.90         0.00     0.00
+           42.44   636.17      8.56   128.36        44.85   900.90         0.00     0.00
        Outflows
               outlets         withdrawals
          average  maximum   average  maximum
@@ -334,10 +334,10 @@ Inflow/Outflow
        Inflows
               total
          average  maximum
-            19.75   402.92
+            15.10   226.32
              upstream         tributaries     distributed tributaries     precipitation
          average  maximum   average  maximum      average  maximum      average  maximum
-           19.75   402.92      0.00     0.00         0.00     0.00         0.00     0.00
+           15.10   226.32      0.00     0.00         0.00     0.00         0.00     0.00
        Outflows
               outlets         withdrawals
          average  maximum   average  maximum
@@ -346,10 +346,10 @@ Inflow/Outflow
        Inflows
               total
          average  maximum
-             9.32   114.46
+             9.01   135.12
              upstream         tributaries     distributed tributaries     precipitation
          average  maximum   average  maximum      average  maximum      average  maximum
-            9.32   114.46      0.00     0.00         0.00     0.00         0.00     0.00
+            9.01   135.12      0.00     0.00         0.00     0.00         0.00     0.00
        Outflows
               outlets         withdrawals
          average  maximum   average  maximum
@@ -369,14 +369,14 @@ Inflow/Outflow
 
   Branch Inflow Temperature Min/Max
   Branch(JB)    Maximum Temp(C)     Minimum Temp(C) 
-          1          21.330              0.900
-          2          21.730              1.330
-          3          19.080              0.360
-          4          19.080              0.360
+          1          21.300              0.900
+          2          21.700              1.300
+          3          19.100              0.400
+          4          19.100              0.400
 
   Tributary Inflow Temperature Min/Max
   Tributary(JT)    Maximum Temp(C)     Minimum Temp(C) 
-          1          19.870              0.420
+          1          19.900              0.400
 
 Geometry
    Overall Grid
