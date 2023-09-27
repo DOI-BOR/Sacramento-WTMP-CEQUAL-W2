@@ -1,3 +1,0 @@
-MET Warning: Check cloud cover since average [CloudCoverAverage:  1.877] < 3.0 [Note that CLOUD should be between 0-10] for WB:  1 in met_PST.npt                                                             
-Longitudinal eddy diffusivity [DX=   1.000] 10x > DX-theory=  0.0354 for waterbody    1:Model may be unstable
-Longitudinal eddy viscosity [AX=   1.000] 10x > AX-theory=  0.0354 for waterbody    1:Model may be unstable
