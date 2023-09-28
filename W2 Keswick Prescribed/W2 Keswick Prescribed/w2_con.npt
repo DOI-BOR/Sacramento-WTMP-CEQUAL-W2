@@ -3,9 +3,9 @@
 TITLE C ...............................TITLE....................................
         Temperature Modeling
         Keswick Reservoir
-        Simulation for 2017
+        Simulation for 2018
         January through December
-        File created by ES 04/25/23
+        File created by ES 04/26/23
         PLACEHOLDER
         PLACEHOLDER
         PLACEHOLDER
@@ -25,7 +25,7 @@ MISCELL     NDAY SELECTC HABTATC ENVIRPC AERATEC INITUWL
              100     OFF     OFF     OFF     OFF     OFF
 
 TIME CON  TMSTRT   TMEND    YEAR
-           1.000 366.000    2017
+           1.000 366.000    2018
 
 DLT CON      NDT  DLTMIN DLTINTR
                1 1.00000      ON
@@ -241,13 +241,15 @@ PRF SEG     IPRF    IPRF    IPRF    IPRF    IPRF    IPRF    IPRF    IPRF    IPRF
 WB 1
 
 SPR PLOT    SPRC    NSPR   NISPR
-WB 1          ON       8       2
+WB 1          ON      18       2
 
 SPR DATE    SPRD    SPRD    SPRD    SPRD    SPRD    SPRD    SPRD    SPRD    SPRD
-WB 1     258.500 274.500 288.500 305.500 319.500 335.500 349.500 365.500
+WB 1      91.500 105.500 121.500 135.500 152.500 166.500 182.500 196.500 213.500
+         227.500 244.500 258.500 274.500 288.500 305.500 319.500 335.500 344.458
 
 SPR FREQ    SPRF    SPRF    SPRF    SPRF    SPRF    SPRF    SPRF    SPRF    SPRF
-WB 1         300     300     300     300     300     300     300     300
+WB 1         300     300     300     300     300     300     300     300     300 
+             300     300     300     300     300     300     300     300     300  
 
 SPR SEG     ISPR    ISPR    ISPR    ISPR    ISPR    ISPR    ISPR    ISPR    ISPR
 WB 1         101     102
