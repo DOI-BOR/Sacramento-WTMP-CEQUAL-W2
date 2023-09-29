@@ -3,15 +3,15 @@
 TITLE C ...............................TITLE....................................
         Shasta Lake Temperature
         Shasta Lake
-        Simulation for 2018       
+        Simulation for 2016
         Shasta Reservoir Model
-        ES   05/18/22
-        
-        
-        
-        
-        
-        
+        ES   05/28/22
+
+
+
+
+
+
 GRID         NWB     NBR     IMX     KMX   NPROC  CLOSEC
                1       5     235     151       1     OFF
 
@@ -25,19 +25,19 @@ MISCELL     NDAY SELECTC HABTATC ENVIRPC AERATEC INITUWL
              100     TCD     OFF     OFF     OFF     OFF
 
 TIME CON  TMSTRT   TMEND    YEAR
-         1.00000 366.000    2018
+         1.00000 367.000    2016
 
 DLT CON      NDT  DLTMIN DLTINTR
-               1 1.00000     OFF
+               1 0.40000     OFF
 
 DLT DATE    DLTD    DLTD    DLTD    DLTD    DLTD    DLTD    DLTD    DLTD    DLTD
            1.000
 
 DLT MAX   DLTMAX  DLTMAX  DLTMAX  DLTMAX  DLTMAX  DLTMAX  DLTMAX  DLTMAX  DLTMAX
-         3600.00
+          360.00
 
 DLT FRN     DLTF    DLTF    DLTF    DLTF    DLTF    DLTF    DLTF    DLTF    DLTF
-           0.900
+           0.500
 
 DLT LIMI    VISC    CELC
 WB 1          ON      ON
@@ -78,7 +78,7 @@ TRANSPOR   SLTRC   THETA
 WB 1    ULTIMATE 0.55000
 
 HYD COEF      AX      DX    CBHE    TSED      FI   TSEDF   FRICC      Z0
-WB 1     1.00000 1.00000     0.6   6.000  0.0100   1.000   CHEZY 0.00100
+WB 1     1.00000 1.00000     0.6  6.0000  0.0100   1.000   CHEZY 0.00100
 
 EDDY VISC    AZC   AZSLC   AZMAX     FBC       E   ARODI STRCKLR BOUNDFR  TKECAL
 WB 1         TKE     IMP   1.000
