@@ -2,41 +2,86 @@
 <CeQualW2Alt Name="W2 Shasta Prescribed">
   <Description />
   <DataLocations>
-    <DataLocation Name="Branch 1 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:qin_br1_16.npt/Branch 1 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 1 Inflow/" ComputeType="Computed" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="Branch 1 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:qin_br1_16.npt/Branch 1 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 1 Inflow/" ComputeType="Computed" Model="DSS File" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
+      <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+      <DownStreamLocation>
+        <DataLocation Name="PIT R. BRANCH-FLOW" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-SHASTA LAKE/PIT R. BRANCH-FLOW/FLOW/01JAN2015/1DAY/230.6.125.1.1/" ComputeType="Computed" Parameter="FLOW" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\DMS_SacTrnHydroTS.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
+    </DataLocation>
+    <DataLocation Name="Branch 2 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:qin_br2_16.npt/Branch 2 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 2 Inflow/" ComputeType="Computed" Model="DSS File" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
+      <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+      <DownStreamLocation>
+        <DataLocation Name="SULANHARAS CREEK-FLOW" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-SHASTA LAKE/SULANHARAS CREEK-FLOW/FLOW/01JAN2015/1DAY/230.7.125.1.1/" ComputeType="Computed" Parameter="FLOW" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\DMS_SacTrnHydroTS.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
+    </DataLocation>
+    <DataLocation Name="Branch 3 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:qin_br3_16.npt/Branch 3 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 3 Inflow/" ComputeType="Computed" Model="DSS File" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
+      <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+      <DownStreamLocation>
+        <DataLocation Name="MCCLOUD RIVER-FLOW" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-SHASTA LAKE/MCCLOUD RIVER-FLOW/FLOW/01JAN2015/1DAY/230.8.125.1.1/" ComputeType="Computed" Parameter="FLOW" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\DMS_SacTrnHydroTS.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
+    </DataLocation>
+    <DataLocation Name="Branch 4 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:qin_br4_16.npt/Branch 4 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 4 Inflow/" ComputeType="Computed" Model="DSS File" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
+      <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+      <DownStreamLocation>
+        <DataLocation Name="SACRAMENTO R. A DELTA-FLOW" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-SHASTA LAKE/SACRAMENTO R. A DELTA-FLOW/FLOW/01JAN2015/1DAY/230.9.125.1.1/" ComputeType="Computed" Parameter="FLOW" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\DMS_SacTrnHydroTS.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
+    </DataLocation>
+    <DataLocation Name="Branch 5 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:qin_br5_16.npt/Branch 5 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 5 Inflow/" ComputeType="Computed" Model="DSS File" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
     </DataLocation>
-    <DataLocation Name="Branch 2 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:qin_br2_16.npt/Branch 2 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 2 Inflow/" ComputeType="Computed" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="Branch 1 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:tin_br1_16.npt/Branch 1 Inflow/Temp-TIN//1HOUR/alt:ap:CeQualW2-Branch 1 Inflow/" ComputeType="Computed" Model="DSS File" Parameter="Temp-TIN" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+      <DownStreamLocation>
+        <DataLocation Name="PIT R. BRANCH-TEMP" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-SHASTA LAKE/PIT R. BRANCH-TEMP/TEMP-WATER/01DEC2015/1HOUR/230.6.50.1.1/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\DMS_SacTrnHydroTS.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
     </DataLocation>
-    <DataLocation Name="Branch 3 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:qin_br3_16.npt/Branch 3 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 3 Inflow/" ComputeType="Computed" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="Branch 2 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:tin_br2_16.npt/Branch 2 Inflow/Temp-TIN//1HOUR/alt:ap:CeQualW2-Branch 2 Inflow/" ComputeType="Computed" Model="DSS File" Parameter="Temp-TIN" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+      <DownStreamLocation>
+        <DataLocation Name="PIT R. BRANCH-TEMP" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-SHASTA LAKE/PIT R. BRANCH-TEMP/TEMP-WATER/01DEC2015/1HOUR/230.6.50.1.1/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\DMS_SacTrnHydroTS.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
     </DataLocation>
-    <DataLocation Name="Branch 4 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:qin_br4_16.npt/Branch 4 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 4 Inflow/" ComputeType="Computed" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="Branch 3 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:tin_br3_16.npt/Branch 3 Inflow/Temp-TIN//1HOUR/alt:ap:CeQualW2-Branch 3 Inflow/" ComputeType="Computed" Model="DSS File" Parameter="Temp-TIN" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+      <DownStreamLocation>
+        <DataLocation Name="MCCLOUD RIVER-TEMP" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-SHASTA LAKE/MCCLOUD RIVER-TEMP/TEMP-WATER/01DEC2015/1HOUR/230.8.50.1.1/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\DMS_SacTrnHydroTS.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
     </DataLocation>
-    <DataLocation Name="Branch 5 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:qin_br5_16.npt/Branch 5 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 5 Inflow/" ComputeType="Computed" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="Branch 4 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:tin_br4_16.npt/Branch 4 Inflow/Temp-TIN//1HOUR/alt:ap:CeQualW2-Branch 4 Inflow/" ComputeType="Computed" Model="DSS File" Parameter="Temp-TIN" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
-    </DataLocation>
-    <DataLocation Name="Branch 1 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:tin_br1_16.npt/Branch 1 Inflow/Temp-TIN//1HOUR/alt:ap:CeQualW2-Branch 1 Inflow/" ComputeType="Computed" Parameter="Temp-TIN" OutOfDate="false" PrevModelIndex="0">
-      <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
-    </DataLocation>
-    <DataLocation Name="Branch 2 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:tin_br2_16.npt/Branch 2 Inflow/Temp-TIN//1HOUR/alt:ap:CeQualW2-Branch 2 Inflow/" ComputeType="Computed" Parameter="Temp-TIN" OutOfDate="false" PrevModelIndex="0">
-      <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
-    </DataLocation>
-    <DataLocation Name="Branch 3 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:tin_br3_16.npt/Branch 3 Inflow/Temp-TIN//1HOUR/alt:ap:CeQualW2-Branch 3 Inflow/" ComputeType="Computed" Parameter="Temp-TIN" OutOfDate="false" PrevModelIndex="0">
-      <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
-    </DataLocation>
-    <DataLocation Name="Branch 4 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:tin_br4_16.npt/Branch 4 Inflow/Temp-TIN//1HOUR/alt:ap:CeQualW2-Branch 4 Inflow/" ComputeType="Computed" Parameter="Temp-TIN" OutOfDate="false" PrevModelIndex="0">
-      <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+      <DownStreamLocation>
+        <DataLocation Name="SACRAMENTO R. A DELTA-TEMP" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-SHASTA LAKE/SACRAMENTO R. A DELTA-TEMP/TEMP-WATER/01DEC2015/1HOUR/230.9.50.1.1/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\DMS_SacTrnHydroTS.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
     </DataLocation>
     <DataLocation Name="Branch 5 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:tin_br5_16.npt/Branch 5 Inflow/Temp-TIN//1HOUR/alt:ap:CeQualW2-Branch 5 Inflow/" ComputeType="Computed" Parameter="Temp-TIN" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
     </DataLocation>
-    <DataLocation Name="Branch 1 Distr Trib" Class="hec2.model.DataLocation" DssPath="/W2:Qdt_br1_16_upd6.npt/Branch 1 Distr Trib/Flow-QDT//1HOUR/alt:ap:CeQualW2-Branch 1 Distr Trib/" ComputeType="Computed" Parameter="Flow-QDT" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="Branch 1 Distr Trib" Class="hec2.model.DataLocation" DssPath="/W2:Qdt_br1_16_upd6.npt/Branch 1 Distr Trib/Flow-QDT//1HOUR/alt:ap:CeQualW2-Branch 1 Distr Trib/" ComputeType="Computed" Model="" Parameter="Flow-QDT" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
     </DataLocation>
-    <DataLocation Name="Branch 1 Distr Trib" Class="hec2.model.DataLocation" DssPath="/W2:tdt_br1_16.npt/Branch 1 Distr Trib/Temp-TDT//1HOUR/alt:ap:CeQualW2-Branch 1 Distr Trib/" ComputeType="Computed" Parameter="Temp-TDT" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="Branch 1 Distr Trib" Class="hec2.model.DataLocation" DssPath="/W2:tdt_br1_16.npt/Branch 1 Distr Trib/Temp-TDT//1HOUR/alt:ap:CeQualW2-Branch 1 Distr Trib/" ComputeType="Computed" Model="DSS File" Parameter="Temp-TDT" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+      <DownStreamLocation>
+        <DataLocation Name="PIT R. BRANCH-TEMP" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-SHASTA LAKE/PIT R. BRANCH-TEMP/TEMP-WATER/01DEC2015/1HOUR/230.6.50.1.1/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\DMS_SacTrnHydroTS.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
     </DataLocation>
     <DataLocation Name="Branch 1 Struct Withdrawal 1" Class="hec2.model.DataLocation" DssPath="/W2:Qout_16_051822.npt/Branch 1 Struct Withdrawal 1/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 1/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
@@ -107,23 +152,53 @@
     <DataLocation Name="Branch 1 Struct Withdrawal 23" Class="hec2.model.DataLocation" DssPath="/W2:Qout_16_051822.npt/Branch 1 Struct Withdrawal 23/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 23/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
     </DataLocation>
-    <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST_16.npt/WB 1 Met/TAIR//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Parameter="TAIR" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST_16.npt/WB 1 Met/TAIR//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Model="DSS File" Parameter="TAIR" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+      <DownStreamLocation>
+        <DataLocation Name="KRDD-AIR TEMPERATURE" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR/01DEC2015/1HOUR/235.40.53.1.1/" ComputeType="Computed" Parameter="TEMP-AIR" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\DMS_SacTrnMet.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
     </DataLocation>
-    <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST_16.npt/WB 1 Met/TDEW//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Parameter="TDEW" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST_16.npt/WB 1 Met/TDEW//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Model="DSS File" Parameter="TDEW" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+      <DownStreamLocation>
+        <DataLocation Name="KRDD-DEW POINT" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT/01DEC2015/1HOUR/235.40.51.1.1/" ComputeType="Computed" Parameter="TEMP-DEWPOINT" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\DMS_SacTrnMet.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
     </DataLocation>
-    <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST_16.npt/WB 1 Met/WS//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Parameter="WS" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST_16.npt/WB 1 Met/WS//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Model="DSS File" Parameter="WS" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+      <DownStreamLocation>
+        <DataLocation Name="KRDD-WIND SPEED" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND-W2LINK/01DEC2015/1HOUR/235.40.133.1.1/" ComputeType="Computed" Parameter="SPEED-WIND-W2LINK" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\DMS_SacTrnMet.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
     </DataLocation>
-    <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST_16.npt/WB 1 Met/PHI//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Parameter="PHI" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST_16.npt/WB 1 Met/PHI//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Model="DSS File" Parameter="PHI" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+      <DownStreamLocation>
+        <DataLocation Name="KRDD-WIND DIRECTION" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND DIRECTION/DIR-WIND/01DEC2015/1HOUR/235.40.133.1.2/" ComputeType="Computed" Parameter="DIR-WIND" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\DMS_SacTrnMet.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
     </DataLocation>
-    <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST_16.npt/WB 1 Met/Cloud//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Parameter="Cloud" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST_16.npt/WB 1 Met/Cloud//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Model="DSS File" Parameter="Cloud" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+      <DownStreamLocation>
+        <DataLocation Name="RRAC1-CLOUD COVER" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER/01DEC2015/1HOUR/235.41.129.1.1/" ComputeType="Computed" Parameter="%-CLOUD COVER" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\DMS_SacTrnMet.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
     </DataLocation>
-    <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST_16.npt/WB 1 Met/SRO//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Parameter="SRO" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST_16.npt/WB 1 Met/SRO//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Model="DSS File" Parameter="SRO" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+      <DownStreamLocation>
+        <DataLocation Name="RRAC1-SOLAR RADIATION" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SOLAR/01DEC2015/1HOUR/235.41.135.1.1/" ComputeType="Computed" Parameter="IRRAD-SOLAR" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\DMS_SacTrnMet.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
     </DataLocation>
     <DataLocation Name="WB 1 Bathymetry" Class="hec2.model.DataLocation" DssPath="/W2:Shasta_Lake_bthy_040717b_2016.npt/WB 1 Bathymetry/Elev-ELWS//1HOUR/alt:ap:CeQualW2-WB 1 Bathymetry/" ComputeType="Computed" Parameter="Elev-ELWS" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
