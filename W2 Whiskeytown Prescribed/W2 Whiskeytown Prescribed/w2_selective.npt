@@ -19,7 +19,7 @@ SPLIT1      CNTR     NUM  TSFREQ  TSCONV
               ON       1 0.04167   0.005
 
 SPLIT2     ST/WD      JB  YEARLY    TSTR    TEND TTARGET  DYNSEL  ELCONT   NOUTS TSSHARE
-1             ST       3     OFF   1.000 367.000     12.      ON     OFF       2     OFF
+1             ST       3     OFF   1.000 366.000     12.      ON     OFF       2     OFF
 
 SPLITOUT JS1/NW1 JS2/NW2 JS3/NW3 JS4/NW4 JS5/NW5 JS6/NW6 JS7/NW7 JS8/NW8 JS9/NW9 JS0/NW0
 1              1       2 
