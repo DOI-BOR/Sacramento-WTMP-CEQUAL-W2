@@ -3,9 +3,9 @@
 TITLE C ...............................TITLE....................................
         Shasta Lake Temperature
         Shasta Lake
-        Simulation for 2014       
+        Simulation for 2017       
         Shasta Reservoir Model
-        ES   09/17/20
+        ES   05/18/22
         
         
         
@@ -13,7 +13,7 @@ TITLE C ...............................TITLE....................................
         
         
 GRID         NWB     NBR     IMX     KMX   NPROC  CLOSEC
-               1       5     235     151       1     OFF       
+               1       5     235     151       1      ON
 
 IN/OUTFL     NTR     NST     NIW     NWD     NGT     NSP     NPI     NPU
                0      23       0       0       0       0       0       0
@@ -25,7 +25,7 @@ MISCELL     NDAY SELECTC HABTATC ENVIRPC AERATEC INITUWL
              100     TCD     OFF     OFF     OFF     OFF
 
 TIME CON  TMSTRT   TMEND    YEAR
-         1.00000 366.000    2014
+        1.000000366.0000    2017
 
 DLT CON      NDT  DLTMIN DLTINTR
                1 1.00000     OFF
@@ -56,7 +56,7 @@ INIT CND   TEMPI    ICEI  WTYPEC   GRIDC
 WB 1       -1.00 0.01000   FRESH   TRAP
 
 CALCULAT     VBC     EBC     MBC     PQC     EVC     PRC
-WB 1          ON      ON      ON      ON     OFF     OFF
+WB 1          ON      ON      ON      ON      ON     OFF
 
 DEAD SEA   WINDC    QINC   QOUTC   HEATC
 WB 1          ON      ON      ON      ON
@@ -111,7 +111,7 @@ BR 5
 STR BOT    KBSTR   KBSTR   KBSTR   KBSTR   KBSTR   KBSTR   KBSTR   KBSTR   KBSTR
 BR 1          14     150     150     150     150     150     150     150     150
              150     150     150     150     150     150     150     150     150
-             150     150     150     150     150 
+             150     150     150     150     150
 BR 2     
 BR 3     
 BR 4
@@ -130,7 +130,7 @@ STR ELEV    ESTR    ESTR    ESTR    ESTR    ESTR    ESTR    ESTR    ESTR    ESTR
 BR 1      316.08  317.60  311.20  304.80  287.12  280.72  274.32  252.98  248.72
           244.45  243.84  231.65  219.46  287.12  256.64  226.16  288.54  273.32    
           254.09  245.56  237.74  228.45  212.00
-BR 2     
+BR 2
 BR 3     
 BR 4
 BR 5     
@@ -138,7 +138,7 @@ BR 5
 STR WIDT    WSTR    WSTR    WSTR    WSTR    WSTR    WSTR    WSTR    WSTR    WSTR
 BR 1      102.00                                                           
                                                                    76.20   76.20
-           76.20   76.20   76.20   76.20
+           76.20   76.20   76.20   76.20        
 BR 2     
 BR 3     
 BR 4
@@ -250,7 +250,7 @@ HPG           ON
 GRAV          ON
 
 SNP PRINT   SNPC    NSNP   NISNP
-WB 1         OFF       1       9
+WB 1          ON       1       9
 
 SNP DATE    SNPD    SNPD    SNPD    SNPD    SNPD    SNPD    SNPD    SNPD    SNPD
 WB 1       1.000
@@ -259,7 +259,7 @@ SNP FREQ    SNPF    SNPF    SNPF    SNPF    SNPF    SNPF    SNPF    SNPF    SNPF
 WB 1    .0416667
 
 SNP SEG     ISNP    ISNP    ISNP    ISNP    ISNP    ISNP    ISNP    ISNP    ISNP
-WB 1          26      29      32      47      58      65      71      76      77            
+WB 1          26      29      32      47      58      65      71      76      77           
 
 SCR PRINT   SCRC    NSCR
 WB 1          ON       1
@@ -361,8 +361,8 @@ WITH DAT    WDOD    WDOD    WDOD    WDOD    WDOD    WDOD    WDOD    WDOD    WDOD
         1.020834        
 
 WITH FRE    WDOF    WDOF    WDOF    WDOF    WDOF    WDOF    WDOF    WDOF    WDOF
-        .0416667        
-
+        .0416667
+        
 WITH SEG    IWDO    IWDO    IWDO    IWDO    IWDO    IWDO    IWDO    IWDO    IWDO
               77  
 
@@ -689,7 +689,7 @@ LPOM_N       OFF
 RPOM_N       OFF 
 
 EX COEF    EXH2O    EXSS    EXOM    BETA     EXC    EXIC
-WB 1     0.45000  0.1000 0.10000 0.40000     OFF     OFF
+WB 1     0.45000 0.10000 0.10000 0.40000     OFF     OFF
 
 ALG EX       EXA     EXA     EXA     EXA     EXA     EXA
          0.20000
