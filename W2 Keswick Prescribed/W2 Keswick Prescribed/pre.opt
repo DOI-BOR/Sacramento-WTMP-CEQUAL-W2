@@ -2,9 +2,9 @@
 
         1       1                                                        
  Keswick Reservoir                                                       
- Simulation for 2017                                                     
+ Simulation for 2016                                                     
  January through December                                                
- File created by ES 04/25/23                                             
+ File created by ES 04/13/23                                             
  PLACEHOLDER                                                             
  PLACEHOLDER                                                             
  PLACEHOLDER                                                             
@@ -13,10 +13,10 @@
 
  Time Control
    Starting time (Julian day) [TMSTRT] =    1.00
-   Ending time (Julian day)    [TMEND] =  366.00
-   Year                         [YEAR] =    2017
+   Ending time (Julian day)    [TMEND] =  367.00
+   Year                         [YEAR] =    2016
    # Timestep intervals         [NDLT] =       1
-   Minimum timestep (sec)     [DLTMIN] =     1.0
+   Minimum timestep (sec)     [DLTMIN] =     5.0
    Timestep day (Julian day)    [DLTD] =     1.0
    Maximum timestep (sec)     [DLTMAX] =    60.0
    Fraction of timestep         [DLTF] =    1.00
@@ -77,12 +77,12 @@
 Meteorological Data Input Summary
     Parameter   Waterbody   Average Value    Maximum     Minimum
 
-    TAIR(C)          1           18.182       45.000      -2.000
-    TDEW(C)          1            6.270       19.430     -11.940
-    WIND(m/s)        1            2.716       18.010       0.000
-    PHI(rad)         1            2.798        6.280       0.000
-    CLOUD(0-10)      1            1.877       10.000       0.000
-    SRO(W/m2)        1          196.207      989.200       0.000
+    TAIR(C)          1           18.116       44.010      -4.000
+    TDEW(C)          1            6.757       18.290     -13.150
+    WIND(m/s)        1            2.485       19.030       0.000
+    PHI(rad)         1            2.789        6.280       0.000
+    CLOUD(0-10)      1            2.008       10.000       0.000
+    SRO(W/m2)        1          197.527      997.300       0.000
 
 
 
@@ -152,12 +152,7 @@ Meteorological Data Input Summary
      Fluxes           [FLXC] = OFF
      Vector plot      [VPLC] = OFF
      Profile plot     [PRFC] = OFF
-     Spreadsheet plot [SPRC] =  ON
-       Number of time intervals [NSPR] =      8
-       Number of stations      [NISPR] =      2
-       Segment location         [ISPR] =    101    102
-       Date  (Julian day)       [SPRD] = 258.50 274.50 288.50 305.50 319.50 335.50 349.50 365.50
-       Frequency  (days)        [SPRF] = 300.00 300.00 300.00 300.00 300.00 300.00 300.00 300.00
+     Spreadsheet plot [SPRC] = OFF
      Contour plot     [CPLC] =  ON
        Number of time intervals [NCPL] =      1
        Date (Julian day)        [CPLD] =   1.00
@@ -167,7 +162,7 @@ Meteorological Data Input Summary
        Date  (Julian day)       [TSRD] =   1.00
        Frequency  (days)        [TSRF] =   0.04
      Restart out      [RSOC] = OFF
-     Restart in       [RSIC] = OFF
+     Restart in       [RSIC] =   0
 
 Inflow/Outflow
    Selective Withdrawal
@@ -190,17 +185,17 @@ Inflow/Outflow
    Restart    =                                                                         
    Withdrawal =                                                                         
    Waterbody 1
-     Bathymetry           = Keswick_Res_Bathy_17_041218(CHEZY).npt                                  
-     Meteorology          = met_PST_17.npt                                                          
+     Bathymetry           = Keswick_Res_2016Bathy_101617(CHEZY).npt                                 
+     Meteorology          = met_PST_16.npt                                                          
      Vertical profile     =                                                                         
      Longitudinal profile =                                                                         
    Branch 1
-     Inflow                               = QinShD_PST_17(042423).npt                                               
-     Inflow temperature                   = TinShD_PST_17.npt                                                       
+     Inflow                               = QinShD_PST_16(041323).npt                                               
+     Inflow temperature                   = TinShD_PST_16_upd.npt                                                   
      Inflow concentrations                =                                                                         
-     Outflow                              = Qout_PST_17.npt                                                         
-     Distributed tributary inflows        = Qdt_hrly_17(042523)upd.npt                                              
-     Distributed tributary temperatures   = Tdt_PST_17.npt                                                          
+     Outflow                              = Qout_PST_16.npt                                                         
+     Distributed tributary inflows        = Qdt_PST_16(041323).npt                                                  
+     Distributed tributary temperatures   = Tdt_PST_16_upd.npt                                                      
      Distributed tributary concentrations =                                                                         
      Precipitation                        =                                                                         
      Precipitation temperatures           =                                                                         
@@ -212,8 +207,8 @@ Inflow/Outflow
      Downstream head temperatures         =                                                                         
      Downstream head concentrations       =                                                                         
    Branch 2
-     Inflow                               = QinSCr_PST_17_upd121522.npt                                             
-     Inflow temperature                   = TinSCr_PST_17.npt                                                       
+     Inflow                               = QinSCr_PST_16.npt                                                       
+     Inflow temperature                   = TinSCr_PST_16.npt                                                       
      Inflow concentrations                =                                                                         
      Outflow                              =                                                                         
      Distributed tributary inflows        =                                                                         
@@ -232,7 +227,7 @@ Inflow/Outflow
  Output Filenames
    Error       = pre.err                                                                 
    Warning     = pre.wrn                                                                 
-   Time series = tsr_17.opt                                                              
+   Time series = tsr_16.opt                                                              
    Withdrawal  = wdo.opt                                                                 
    Waterbody 1
      Snapshot     = snp.opt                                                                 
@@ -245,28 +240,28 @@ Inflow/Outflow
    Waterbody 1
       total inflows     total outflows
     average  maximum   average  maximum
-     382.05  2243.32    382.06  1970.44
+     185.35   556.30    185.33   340.51
 
      Branch 1
        Inflows
               total
          average  maximum
-           347.30  2243.32
+           169.98   556.30
              upstream         tributaries     distributed tributaries     precipitation
          average  maximum   average  maximum      average  maximum      average  maximum
-          359.04  2243.32      0.00     0.00       -11.75   311.99         0.00     0.00
+          163.92   556.30      0.00     0.00         6.06   312.50         0.00     0.00
        Outflows
               outlets         withdrawals
          average  maximum   average  maximum
-          382.06  1970.44      0.00     0.00
+          185.33   340.51      0.00     0.00
      Branch 2
        Inflows
               total
          average  maximum
-            34.75   134.32
+            15.38   126.66
              upstream         tributaries     distributed tributaries     precipitation
          average  maximum   average  maximum      average  maximum      average  maximum
-           34.75   134.32      0.00     0.00         0.00     0.00         0.00     0.00
+           15.38   126.66      0.00     0.00         0.00     0.00         0.00     0.00
        Outflows
               outlets         withdrawals
          average  maximum   average  maximum
@@ -274,8 +269,8 @@ Inflow/Outflow
 
   Branch Inflow Temperature Min/Max
   Branch(JB)    Maximum Temp(C)     Minimum Temp(C) 
-          1       0.122E+02          0.772E+01
-          2       0.135E+02          0.739E+01
+          1       0.133E+02          0.811E+01
+          2       0.150E+02          0.822E+01
 
 Geometry
    Overall Grid
@@ -303,7 +298,7 @@ Geometry
        Upstream segment       [US] = 105   Downstream segment       [DS] = 116
        Upstream head segment [UHS] = 0     Downstream head segment [DHS] = 89
 
- Initial Branch Volume [VOLB] = 24618785.3 m^3
+ Initial Branch Volume [VOLB] = 24701349.6 m^3
 
                                  Branch 1 Volume-Area-Elevation Table
                                  Note: Elevation is at top of layer
@@ -343,7 +338,7 @@ Geometry
   31        150.71        0.003           0.004      4            1.2             0.21
   32        149.71        0.001           0.001      1            1.0             0.05
 
- Initial Branch Volume [VOLB] = 569944.7 m^3
+ Initial Branch Volume [VOLB] = 573651.9 m^3
 
                                  Branch 2 Volume-Area-Elevation Table
                                  Note: Elevation is at top of layer
@@ -383,7 +378,7 @@ Geometry
   31        150.71        0.000           0.000      0            0.0             0.00
   32        149.71        0.000           0.000      0            0.0             0.00
 
- Waterbody 1 Initial Volume [VOLG] = 25188730.1 m^3
+ Waterbody 1 Initial Volume [VOLG] = 25275001.5 m^3
 
                                  Waterbody 1 Volume-Area-Elevation Table
                                  Note: Elevation is at top of layer
@@ -391,33 +386,33 @@ Geometry
  Layer     Elevation      Area        Volume   Active Cells  Average depth  Average width  Residence time
               (m)      (1.0E6 m^2)  (1.0E6 m^3)                  (m)             (m)           (days)
 
-   2        179.71        2.157          28.424   2051           13.2           127.90              0.86
-   3        178.71        2.157          26.267   1938           12.2           127.90              0.80
-   4 KT     177.71        2.157          24.110   1825           11.2           127.90              0.73
-   5        176.71        2.011          21.953   1712           10.9           119.21              0.67
-   6        175.71        1.885          19.942   1599           10.6           111.79              0.60
-   7        174.71        1.766          18.057   1488           10.2           104.69              0.55
-   8        173.71        1.661          16.291   1377            9.8            98.50              0.49
-   9        172.71        1.563          14.630   1267            9.4            92.69              0.44
-  10        171.71        1.466          13.067   1158            8.9            86.93              0.40
-  11        170.71        1.360          11.600   1052            8.5            80.62              0.35
-  12        169.71        1.259          10.241    952            8.1            74.62              0.31
-  13        168.71        1.168           8.982    858            7.7            69.25              0.27
-  14        167.71        1.061           7.814    765            7.4            62.90              0.24
-  15        166.71        0.953           6.753    675            7.1            56.52              0.20
-  16        165.71        0.875           5.800    598            6.6            51.90              0.18
-  17        164.71        0.804           4.925    527            6.1            47.68              0.15
-  18        163.71        0.739           4.120    459            5.6            43.82              0.12
-  19        162.71        0.666           3.381    396            5.1            39.48              0.10
-  20        161.71        0.575           2.715    337            4.7            34.11              0.08
-  21        160.71        0.491           2.140    284            4.4            29.13              0.06
-  22        159.71        0.434           1.649    238            3.8            25.71              0.05
-  23        158.71        0.365           1.215    197            3.3            21.65              0.04
-  24        157.71        0.292           0.850    157            2.9            17.28              0.03
-  25        156.71        0.220           0.559    120            2.5            13.06              0.02
-  26        155.71        0.147           0.338     86            2.3             8.70              0.01
+   2        179.71        2.157          28.424   2051           13.2           127.90              1.78
+   3        178.71        2.157          26.267   1938           12.2           127.90              1.64
+   4 KT     177.71        2.157          24.110   1825           11.2           127.90              1.51
+   5        176.71        2.011          21.953   1712           10.9           119.21              1.37
+   6        175.71        1.885          19.942   1599           10.6           111.79              1.25
+   7        174.71        1.766          18.057   1488           10.2           104.69              1.13
+   8        173.71        1.661          16.291   1377            9.8            98.50              1.02
+   9        172.71        1.563          14.630   1267            9.4            92.69              0.91
+  10        171.71        1.466          13.067   1158            8.9            86.93              0.82
+  11        170.71        1.360          11.600   1052            8.5            80.62              0.72
+  12        169.71        1.259          10.241    952            8.1            74.62              0.64
+  13        168.71        1.168           8.982    858            7.7            69.25              0.56
+  14        167.71        1.061           7.814    765            7.4            62.90              0.49
+  15        166.71        0.953           6.753    675            7.1            56.52              0.42
+  16        165.71        0.875           5.800    598            6.6            51.90              0.36
+  17        164.71        0.804           4.925    527            6.1            47.68              0.31
+  18        163.71        0.739           4.120    459            5.6            43.82              0.26
+  19        162.71        0.666           3.381    396            5.1            39.48              0.21
+  20        161.71        0.575           2.715    337            4.7            34.11              0.17
+  21        160.71        0.491           2.140    284            4.4            29.13              0.13
+  22        159.71        0.434           1.649    238            3.8            25.71              0.10
+  23        158.71        0.365           1.215    197            3.3            21.65              0.08
+  24        157.71        0.292           0.850    157            2.9            17.28              0.05
+  25        156.71        0.220           0.559    120            2.5            13.06              0.03
+  26        155.71        0.147           0.338     86            2.3             8.70              0.02
   27        154.71        0.090           0.191     57            2.1             5.33              0.01
-  28        153.71        0.051           0.102     37            2.0             3.00              0.00
+  28        153.71        0.051           0.102     37            2.0             3.00              0.01
   29        152.71        0.032           0.051     23            1.6             1.92              0.00
   30        151.71        0.014           0.019     11            1.3             0.86              0.00
   31        150.71        0.003           0.004      4            1.2             0.20              0.00
@@ -425,7 +420,7 @@ Geometry
  
        The following grid summary for all waterbodies is only valid for all waterbodies having the same EBOT. Otherwise ignore this summary.
 
- **ALL WATERBODIES**  Initial Volume [VOLG] = 25188730.0 m^3
+ **ALL WATERBODIES**  Initial Volume [VOLG] = 25275002.0 m^3
 
                                  All Waterbodies   Volume-Area-Elevation Table
                                  Note: Elevation is at top of layer
@@ -433,33 +428,33 @@ Geometry
  Layer     Elevation      Area        Volume   Active Cells  Average depth  Average width  Residence time
               (m)      (1.0E6 m^2)  (1.0E6 m^3)                  (m)             (m)           (days)
 
-   2        179.71        2.157          28.424   2051           13.2           127.90              0.86
-   3        178.71        2.157          26.267   1938           12.2           127.90              0.80
-   4        177.71        2.157          24.110   1825           11.2           127.90              0.73
-   5        176.71        2.011          21.953   1712           10.9           119.21              0.67
-   6        175.71        1.885          19.942   1599           10.6           111.79              0.60
-   7        174.71        1.766          18.057   1488           10.2           104.69              0.55
-   8        173.71        1.661          16.291   1377            9.8            98.50              0.49
-   9        172.71        1.563          14.630   1267            9.4            92.69              0.44
-  10        171.71        1.466          13.067   1158            8.9            86.93              0.40
-  11        170.71        1.360          11.600   1052            8.5            80.62              0.35
-  12        169.71        1.259          10.241    952            8.1            74.62              0.31
-  13        168.71        1.168           8.982    858            7.7            69.25              0.27
-  14        167.71        1.061           7.814    765            7.4            62.90              0.24
-  15        166.71        0.953           6.753    675            7.1            56.52              0.20
-  16        165.71        0.875           5.800    598            6.6            51.90              0.18
-  17        164.71        0.804           4.925    527            6.1            47.68              0.15
-  18        163.71        0.739           4.120    459            5.6            43.82              0.12
-  19        162.71        0.666           3.381    396            5.1            39.48              0.10
-  20        161.71        0.575           2.715    337            4.7            34.11              0.08
-  21        160.71        0.491           2.140    284            4.4            29.13              0.06
-  22        159.71        0.434           1.649    238            3.8            25.71              0.05
-  23        158.71        0.365           1.215    197            3.3            21.65              0.04
-  24        157.71        0.292           0.850    157            2.9            17.28              0.03
-  25        156.71        0.220           0.559    120            2.5            13.06              0.02
-  26        155.71        0.147           0.338     86            2.3             8.70              0.01
+   2        179.71        2.157          28.424   2051           13.2           127.90              1.78
+   3        178.71        2.157          26.267   1938           12.2           127.90              1.64
+   4        177.71        2.157          24.110   1825           11.2           127.90              1.51
+   5        176.71        2.011          21.953   1712           10.9           119.21              1.37
+   6        175.71        1.885          19.942   1599           10.6           111.79              1.25
+   7        174.71        1.766          18.057   1488           10.2           104.69              1.13
+   8        173.71        1.661          16.291   1377            9.8            98.50              1.02
+   9        172.71        1.563          14.630   1267            9.4            92.69              0.91
+  10        171.71        1.466          13.067   1158            8.9            86.93              0.82
+  11        170.71        1.360          11.600   1052            8.5            80.62              0.72
+  12        169.71        1.259          10.241    952            8.1            74.62              0.64
+  13        168.71        1.168           8.982    858            7.7            69.25              0.56
+  14        167.71        1.061           7.814    765            7.4            62.90              0.49
+  15        166.71        0.953           6.753    675            7.1            56.52              0.42
+  16        165.71        0.875           5.800    598            6.6            51.90              0.36
+  17        164.71        0.804           4.925    527            6.1            47.68              0.31
+  18        163.71        0.739           4.120    459            5.6            43.82              0.26
+  19        162.71        0.666           3.381    396            5.1            39.48              0.21
+  20        161.71        0.575           2.715    337            4.7            34.11              0.17
+  21        160.71        0.491           2.140    284            4.4            29.13              0.13
+  22        159.71        0.434           1.649    238            3.8            25.71              0.10
+  23        158.71        0.365           1.215    197            3.3            21.65              0.08
+  24        157.71        0.292           0.850    157            2.9            17.28              0.05
+  25        156.71        0.220           0.559    120            2.5            13.06              0.03
+  26        155.71        0.147           0.338     86            2.3             8.70              0.02
   27        154.71        0.090           0.191     57            2.1             5.33              0.01
-  28        153.71        0.051           0.102     37            2.0             3.00              0.00
+  28        153.71        0.051           0.102     37            2.0             3.00              0.01
   29        152.71        0.032           0.051     23            1.6             1.92              0.00
   30        151.71        0.014           0.019     11            1.3             0.86              0.00
   31        150.71        0.003           0.004      4            1.2             0.20              0.00
@@ -723,7 +718,7 @@ Geometry
      Water Surface [Z],
 
            2        23        32
-      -0.5000   -0.5000   -0.5000
+      -0.5400   -0.5400   -0.5400
 
   Temperature [T1], <o/>C            
 

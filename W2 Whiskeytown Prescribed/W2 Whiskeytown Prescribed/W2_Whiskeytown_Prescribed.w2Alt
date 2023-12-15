@@ -77,7 +77,7 @@
     <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST.npt/WB 1 Met/WS//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Model="DSS File" Parameter="WS" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Whiskeytown Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="KRDD-WIND SPEED" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND-W2LINK/01DEC2015/1HOUR/235.40.133.1.1/" ComputeType="Computed" Parameter="SPEED-WIND-W2LINK" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="KRDD-Wind Speed" Class="hec2.model.DssDataLocation" DssPath="/MR Sac.-Clear Cr. to Sac R./KRDD-Wind Speed/Speed-Wind//1Hour/235.40.133.1.1/" ComputeType="Computed" Parameter="Speed-Wind" OutOfDate="false" PrevModelIndex="0">
           <DssFile>shared\DMS_SacTrnMet.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>

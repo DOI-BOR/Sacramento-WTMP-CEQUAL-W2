@@ -1,4 +1,4 @@
-Wind sheltering coefficients file    04/07/17  ES
+Wind sheltering coefficients file    10/06/17  ES
 
     JDAY     WSC     WSC     WSC     WSC     WSC     WSC     WSC     WSC     WSC
      1.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0
@@ -28,7 +28,7 @@ Wind sheltering coefficients file    04/07/17  ES
              1.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0
              1.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0
              1.0
-    366.     1.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0
+   367.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0
              1.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0
              1.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0
              1.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0     1.0
