@@ -1226,7 +1226,7 @@
   <OutputInterval Interval="1Hour" />
   <ExeOverrides>
     <W2Exe>
-      <file>${WAT_INSTALL_DIR}apps/ceQualW2/exe/W2_TCD_081721.exe</file>
+      <file>${WAT_INSTALL_DIR}apps/ceQualW2/exe/w2-4.1-TCD-mp-win-x86_64.exe</file>
       <enabled>true</enabled>
     </W2Exe>
     <PreW2Exe>
