@@ -349,8 +349,8 @@
     <DataLocation Name="WB 1 Vertical Profile" Class="hec2.model.DataLocation" DssPath="/W2:Vpr.npt/WB 1 Vertical Profile/Temp//1HOUR/alt:ap:CeQualW2-WB 1 Vertical Profile/" ComputeType="Computed" Model="DSS File" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="Shasta Lake" Class="hec2.model.DssDataLocation" DssPath="//Shasta Lake/DEPTH-TEMP//2018-04-03//" ComputeType="Computed" Parameter="DEPTH-TEMP" OutOfDate="false" PrevModelIndex="0">
-          <DssFile>shared\shasta_profs_watercourse_all.dss</DssFile>
+        <DataLocation Name="IC" Class="hec2.model.DssDataLocation" DssPath="/Shasta Lake/IC/depth-temp///icPathsMap/" ComputeType="Computed" Parameter="depth-temp" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\WTMP_SacTrn_Forecast.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
@@ -1226,7 +1226,7 @@
   <OutputInterval Interval="1Hour" />
   <ExeOverrides>
     <W2Exe>
-      <file>${WAT_INSTALL_DIR}apps/ceQualW2/exe/w2-4.1-TCD-mp-win-x86_64.exe</file>
+      <file>${WAT_INSTALL_DIR}apps/ceQualW2/exe/W2_TCD_081721.exe</file>
       <enabled>true</enabled>
     </W2Exe>
     <PreW2Exe>
