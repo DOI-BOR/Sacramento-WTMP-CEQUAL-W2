@@ -220,20 +220,20 @@ Inflow/Outflow
  Input Filenames
    Control    = w2_con.csv                                                              
    Restart    = rso150.opt                                                              
-   Withdrawal = Trinity_qwd.csv                                                         
+   Withdrawal = Trinity2016_qwd.csv                                                     
  
    Waterbody 1
-     Bathymetry           = Trinity_bathy.csv                                                       
-     Meteorology          = TrinityCamp_met.csv                                                     
+     Bathymetry           = Trinity_bth_1m.csv                                                      
+     Meteorology          = TrinityCamp2016_met.csv                                                 
      Vertical profile     = vpr.csv                                                                 
      Longitudinal profile = lpr.npt                                                                 
    Branch 1
-     Inflow                               = TRI_Br1_qin.csv                                                         
-     Inflow temperature                   = TRI_Br1_Tw.csv                                                          
+     Inflow                               = TRI_Br1_2016_qin.csv                                                    
+     Inflow temperature                   = TRI_Br1_2016_Tw.csv                                                     
      Inflow concentrations                = cin_br1.npt                                                             
-     Outflow                              = Trinity_qot.csv                                                         
-     Distributed tributary inflows        = Trinity_qdt_1.csv                                                       
-     Distributed tributary temperatures   = Trinity_tdt.csv                                                         
+     Outflow                              = Trinity2016_qot.csv                                                     
+     Distributed tributary inflows        = Trinity2016_qdt_1.csv                                                   
+     Distributed tributary temperatures   = Trinity2016_tdt.csv                                                     
      Distributed tributary concentrations = cdt_br1.npt                                                             
      Precipitation                        = pre_br1.npt                                                             
      Precipitation temperatures           = tpr_br1.npt                                                             
@@ -245,8 +245,8 @@ Inflow/Outflow
      Downstream head temperatures         = tdh_br1.npt                                                             
      Downstream head concentrations       = cdh_br1.npt                                                             
    Branch 2
-     Inflow                               = TRI_Br2_qin.csv                                                         
-     Inflow temperature                   = TRI_Br2_Tw.csv                                                          
+     Inflow                               = TRI_Br2_2016_qin.csv                                                    
+     Inflow temperature                   = TRI_Br2_2016_Tw.csv                                                     
      Inflow concentrations                = cin_br2.npt                                                             
      Outflow                              = qot_br2.npt                                                             
      Distributed tributary inflows        = qdt_br2.npt                                                             
@@ -262,8 +262,8 @@ Inflow/Outflow
      Downstream head temperatures         = tdh_br2.npt                                                             
      Downstream head concentrations       = cdh_br2.npt                                                             
    Branch 3
-     Inflow                               = TRI_Br3_qin.csv                                                         
-     Inflow temperature                   = TRI_Br3_Tw.csv                                                          
+     Inflow                               = TRI_Br3_2016_qin.csv                                                    
+     Inflow temperature                   = TRI_Br3_2016_Tw.csv                                                     
      Inflow concentrations                = cin_br3.npt                                                             
      Outflow                              = qot_br3.npt                                                             
      Distributed tributary inflows        = qdt_br3.npt                                                             
@@ -279,8 +279,8 @@ Inflow/Outflow
      Downstream head temperatures         = tdh_br3.npt                                                             
      Downstream head concentrations       = cdh_br3.npt                                                             
    Branch 4
-     Inflow                               = TRI_Br4_qin.csv                                                         
-     Inflow temperature                   = TRI_Br4_Tw.csv                                                          
+     Inflow                               = TRI_Br4_2016_qin.csv                                                    
+     Inflow temperature                   = TRI_Br4_2016_Tw.csv                                                     
      Inflow concentrations                = cin_br3.npt                                                             
      Outflow                              = qot_br3.npt                                                             
      Distributed tributary inflows        = qdt_br3.npt                                                             
@@ -296,20 +296,20 @@ Inflow/Outflow
      Downstream head temperatures         = tdh_br3.npt                                                             
      Downstream head concentrations       = cdh_br3.npt                                                             
    Tributary 1
-     Inflow               = SwiftCreek_flow.csv                                                     
-     Inflow temperature   = SwiftCreek_Tw.csv                                                       
+     Inflow               = SwiftCreek_flow_2016.csv                                                
+     Inflow temperature   = SwiftCreek_Tw_2016.csv                                                  
      Inflow concentration = ctr_tr1.npt                                                             
 
  Output Filenames
    Error       = pre.err                                                                 
    Warning     = pre.wrn                                                                 
-   Time series = tsr_TRI_1m.csv                                                          
+   Time series = tsr_TRI2016_1m.csv                                                      
    Withdrawal  = wdo.csv                                                                 
    Waterbody 1
      Snapshot     = snp.opt                                                                 
      Fluxes       = flx.opt                                                                 
      Profile      = prf.opt                                                                 
-     Vector plot  = Trinity.w2l                                                             
+     Vector plot  = Trinity2016.w2l                                                         
      Contour plot = cpl.opt                                                                 
 
  Water Balance Summary
@@ -435,7 +435,7 @@ Geometry
        Minimum # of layers    [NL] = 2
      Branch 4
        Upstream segment       [US] = 73    Downstream segment       [DS] = 82
-       Upstream head segment [UHS] = 0     Downstream head segment [DHS] = 69
+       Upstream head segment [UHS] = 0     Downstream head segment [DHS] = 68
        Minimum # of layers    [NL] = 2
 
  Initial Branch Volume [VOLB] = 434854950.7 m^3
