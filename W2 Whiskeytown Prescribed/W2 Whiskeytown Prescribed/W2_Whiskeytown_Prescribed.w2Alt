@@ -40,8 +40,13 @@
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
-    <DataLocation Name="Branch 1 Distr Trib" Class="hec2.model.DataLocation" DssPath="/W2:qdt_br1.npt/Branch 1 Distr Trib/Flow-QDT//1HOUR/alt:ap:CeQualW2-Branch 1 Distr Trib/" ComputeType="Computed" Parameter="Flow-QDT" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="Branch 1 Distr Trib" Class="hec2.model.DataLocation" DssPath="/W2:qdt_br1.npt/Branch 1 Distr Trib/Flow-QDT//1HOUR/alt:ap:CeQualW2-Branch 1 Distr Trib/" ComputeType="Computed" Model="DSS File" Parameter="Flow-QDT" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Whiskeytown Prescribed" Program="CeQualW2" />
+      <DownStreamLocation>
+        <DataLocation Name="W2" Class="hec2.model.DssDataLocation" DssPath="/WhiskeytownLake/W2/Distributed_Tirbutary//1Day//" ComputeType="Computed" Parameter="Distributed_Tirbutary" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\W2_DistributedTributary.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
     </DataLocation>
     <DataLocation Name="Branch 1 Distr Trib" Class="hec2.model.DataLocation" DssPath="/W2:tdt_br1.npt/Branch 1 Distr Trib/Temp-TDT//1HOUR/alt:ap:CeQualW2-Branch 1 Distr Trib/" ComputeType="Computed" Parameter="Temp-TDT" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Whiskeytown Prescribed" Program="CeQualW2" />
