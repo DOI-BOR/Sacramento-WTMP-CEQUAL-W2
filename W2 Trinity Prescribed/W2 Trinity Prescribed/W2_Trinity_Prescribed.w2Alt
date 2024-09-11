@@ -171,7 +171,7 @@
     <DataLocation Name="WB 1 Vertical Profile" Class="hec2.model.DataLocation" DssPath="/W2:vpr.csv/WB 1 Vertical Profile/Temp//1HOUR/alt:ap:CeQualW2-WB 1 Vertical Profile/" ComputeType="Computed" Model="DSS File" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Trinity Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="Trinity" Class="hec2.model.DssDataLocation" DssPath="//Trinity/DEPTH-TEMP//2005-09-08//" ComputeType="Computed" Parameter="DEPTH-TEMP" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="Trinity Lake" Class="hec2.model.DssDataLocation" DssPath="//Trinity Lake/DEPTH-TEMP//2019-01-24//" ComputeType="Computed" Parameter="DEPTH-TEMP" OutOfDate="false" PrevModelIndex="0">
           <DssFile>shared\TrinityProf.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>
