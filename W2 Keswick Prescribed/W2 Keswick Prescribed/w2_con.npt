@@ -3,9 +3,9 @@
 TITLE C ...............................TITLE....................................
         Temperature Modeling
         Keswick Reservoir
-        Simulation for 2019
+        Simulation for 2016
         January through December
-        File created by ES 04/26/23
+        File created by ES 04/13/23
         PLACEHOLDER
         PLACEHOLDER
         PLACEHOLDER
@@ -25,19 +25,19 @@ MISCELL     NDAY SELECTC HABTATC ENVIRPC AERATEC INITUWL
              100     OFF     OFF     OFF     OFF     OFF
 
 TIME CON  TMSTRT   TMEND    YEAR
-           1.000 366.000    2019
+           1.000 367.000    2016
 
 DLT CON      NDT  DLTMIN DLTINTR
-               1 1.00000      ON
+               1 5.00000      ON
 
 DLT DATE    DLTD    DLTD    DLTD    DLTD    DLTD    DLTD    DLTD    DLTD    DLTD
          1.00000
 
 DLT MAX   DLTMAX  DLTMAX  DLTMAX  DLTMAX  DLTMAX  DLTMAX  DLTMAX  DLTMAX  DLTMAX
-           60.00
+          60.000
 
 DLT FRN     DLTF    DLTF    DLTF    DLTF    DLTF    DLTF    DLTF    DLTF    DLTF
-          1.0000
+           1.000
 
 DLT LIMI    VISC    CELC
 WB 1          ON      ON
@@ -241,18 +241,20 @@ PRF SEG     IPRF    IPRF    IPRF    IPRF    IPRF    IPRF    IPRF    IPRF    IPRF
 WB 1
 
 SPR PLOT    SPRC    NSPR   NISPR
-WB 1          ON      16       2
+WB 1         OFF      24       1
 
 SPR DATE    SPRD    SPRD    SPRD    SPRD    SPRD    SPRD    SPRD    SPRD    SPRD
-WB 1     135.500 152.500 166.500 182.500 196.500 213.500 227.500 244.500 258.500
-         274.500 288.500 305.500 319.500 335.500 349.500 364.500
+WB 1     1.50000 15.5000 24.5000 46.5000 65.5000 75.5000 92.5000 103.500 122.500
+         130.500 158.500 170.500 183.500 193.500 214.500 221.500 245.500 254.500
+         271.500 292.500 306.500 319.500 336.500 345.500
 
 SPR FREQ    SPRF    SPRF    SPRF    SPRF    SPRF    SPRF    SPRF    SPRF    SPRF
 WB 1         300     300     300     300     300     300     300     300     300 
-             300     300     300     300     300     300     300 
+             300     300     300     300     300     300     300     300     300 
+             300     300     300     300     300     300
 
 SPR SEG     ISPR    ISPR    ISPR    ISPR    ISPR    ISPR    ISPR    ISPR    ISPR
-WB 1         101     102
+WB 1          31
 
 VPL PLOT    VPLC    NVPL
 WB 1         OFF       0
@@ -282,7 +284,7 @@ FLX FREQ    FLXF    FLXF    FLXF    FLXF    FLXF    FLXF    FLXF    FLXF    FLXF
 WB 1
 
 TSR PLOT    TSRC    NTSR   NITSR   TSRMM
-              ON       1      21     OFF
+              ON       1       4     OFF
 
 TSR DATE    TSRD    TSRD    TSRD    TSRD    TSRD    TSRD    TSRD    TSRD    TSRD
          1.00000
@@ -291,14 +293,10 @@ TSR FREQ    TSRF    TSRF    TSRF    TSRF    TSRF    TSRF    TSRF    TSRF    TSRF
          .041667
 
 TSR SEG     ITSR    ITSR    ITSR    ITSR    ITSR    ITSR    ITSR    ITSR    ITSR
-               2       2      32      32     101     101     101     101     101
-             101     101     101     101     101     101     101     101     101
-             101     101     101
+               2       2      32      32
 
 TSR LAYE    ETSR    ETSR    ETSR    ETSR    ETSR    ETSR    ETSR    ETSR    ETSR
-            1.00      10    1.00      10    0.00    2.00    4.00    6.00    8.00
-           10.00   12.00   14.00   16.00   18.00   20.00   22.00   24.00   26.00
-           28.00   30.00   32.00
+            1.00      10    1.00      10
 
 WITH OUT    WDOC    NWDO   NIWDO
               ON       1       1
@@ -313,7 +311,7 @@ WITH SEG    IWDO    IWDO    IWDO    IWDO    IWDO    IWDO    IWDO    IWDO    IWDO
              102
 
 RESTART     RSOC    NRSO    RSIC
-             OFF       0     OFF
+             OFF       0       0
 
 RSO DATE    RSOD    RSOD    RSOD    RSOD    RSOD    RSOD    RSOD    RSOD    RSOD
 
