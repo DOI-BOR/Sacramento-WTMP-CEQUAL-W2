@@ -5,7 +5,7 @@
     <DataLocation Name="Branch 1 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:Lewiston_qin.csv/Branch 1 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 1 Inflow/" ComputeType="Computed" Model="CeQualW2-W2 Trinity Prescribed" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="Seg 52 Withdrawal" Class="hec2.model.DataLocation" DssPath="/W2:qwo_52.csv/Seg 52 Withdrawal/Flow-QWD//1HOUR/W2 5-Res P:2018:CeQualW2-W2 Trinity Prescribed/" ComputeType="Computed" Parameter="Flow-QWD" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="Seg 52 Withdrawal" Class="hec2.model.DataLocation" DssPath="/W2:qwo_52.csv/Seg 52 Withdrawal/Flow-QWD//1HOUR/W2 5-Res:2018-03-FC:CeQualW2-W2 Trinity Prescribed/" ComputeType="Computed" Parameter="Flow-QWD" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="W2 Trinity Prescribed" Program="CeQualW2" />
         </DataLocation>
       </DownStreamLocation>
@@ -13,7 +13,7 @@
     <DataLocation Name="Branch 1 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:Lew_Br1_Tin.csv/Branch 1 Inflow/Temp-TIN//1HOUR/alt:ap:CeQualW2-Branch 1 Inflow/" ComputeType="Computed" Model="Scripting-OutputLink_W2-Trinity-W2-Lewiston_SacTrn" Parameter="Temp-TIN" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="TrinityW2_FWA_Filt" Class="hec2.model.DataLocation" DssPath="//TrinityW2_FWA_Filt/Temp//1HOUR/W2 5-Res P:2018:Scripting-OutputLink_W2-Trinity-/" ComputeType="Computed" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="TrinityW2_FWA_Filt" Class="hec2.model.DataLocation" DssPath="//TrinityW2_FWA_Filt/Temp//1HOUR/W2 5-Res:2018-03-FC:Scripting-OutputLink_W2-Trinity-/" ComputeType="Computed" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="OutputLink_W2-Trinity-W2-Lewiston_SacTrn" Program="Scripting" />
         </DataLocation>
       </DownStreamLocation>
@@ -21,99 +21,104 @@
     <DataLocation Name="Branch 1 Distr Trib" Class="hec2.model.DataLocation" DssPath="/W2:Lewiston_qdt_1.csv/Branch 1 Distr Trib/Flow-QDT//1HOUR/alt:ap:CeQualW2-Branch 1 Distr Trib/" ComputeType="Computed" Model="DSS File" Parameter="Flow-QDT" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="W2" Class="hec2.model.DssDataLocation" DssPath="/LewistonLake/W2/DistributedTributary//1Hour//" ComputeType="Computed" Parameter="DistributedTributary" OutOfDate="false" PrevModelIndex="0">
-          <DssFile>shared\W2_DistributedTributary.dss</DssFile>
+        <DataLocation Name="ZEROS" Class="hec2.model.DssDataLocation" DssPath="//ZEROS/flow//1Day/ZEROS/" ComputeType="Computed" Parameter="flow" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\WTMP_SacTrn_Forecast.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
-    <DataLocation Name="Branch 1 Distr Trib" Class="hec2.model.DataLocation" DssPath="/W2:Lewiston_tdt.csv/Branch 1 Distr Trib/Temp-TDT//1HOUR/alt:ap:CeQualW2-Branch 1 Distr Trib/" ComputeType="Computed" Parameter="Temp-TDT" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="Branch 1 Distr Trib" Class="hec2.model.DataLocation" DssPath="/W2:Lewiston_tdt.csv/Branch 1 Distr Trib/Temp-TDT//1HOUR/alt:ap:CeQualW2-Branch 1 Distr Trib/" ComputeType="Computed" Model="DSS File" Parameter="Temp-TDT" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
+      <DownStreamLocation>
+        <DataLocation Name="TENS" Class="hec2.model.DssDataLocation" DssPath="//TENS/temp-water//1Day/TENS/" ComputeType="Computed" Parameter="temp-water" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\WTMP_SacTrn_Forecast.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
     </DataLocation>
     <DataLocation Name="Segment 113 Lat Withdrawal 1" Class="hec2.model.DataLocation" DssPath="/W2:Lewiston_qwd.csv/Segment 113 Lat Withdrawal 1/Flow-QWD//1HOUR/alt:ap:CeQualW2-Segment 113 Lat Withdrawal 1/" ComputeType="Computed" Model="DSS File" Parameter="Flow-QWD" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="LEW-Fish Hatchery Release" Class="hec2.model.DssDataLocation" DssPath="/MR Sac.-Lewiston Res./LEW-Fish Hatchery Release/Flow//1Hour/232.12.125.1.1/" ComputeType="Computed" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
-          <DssFile>shared\DMS_SacTrnHydroTS.dss</DssFile>
+        <DataLocation Name="ZEROS" Class="hec2.model.DssDataLocation" DssPath="//ZEROS/flow//1Day/ZEROS/" ComputeType="Computed" Parameter="flow" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\WTMP_SacTrn_Forecast.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
     <DataLocation Name="Segment 112 Lat Withdrawal 2" Class="hec2.model.DataLocation" DssPath="/W2:Lewiston_qwd.csv/Segment 112 Lat Withdrawal 2/Flow-QWD//1HOUR/alt:ap:CeQualW2-Segment 112 Lat Withdrawal 2/" ComputeType="Computed" Model="DSS File" Parameter="Flow-QWD" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="LEW-Gen_plus_Outlet Release" Class="hec2.model.DssDataLocation" DssPath="/MR Sac.-Lewiston Res./LEW-Gen_plus_Outlet Release/Flow//1Hour/min_flow/" ComputeType="Computed" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
-          <DssFile>shared\DMS_SacTrn_ResSim_Pre-Process.dss</DssFile>
+        <DataLocation Name="ZEROS" Class="hec2.model.DssDataLocation" DssPath="//ZEROS/flow//1Day/ZEROS/" ComputeType="Computed" Parameter="flow" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\WTMP_SacTrn_Forecast.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
     <DataLocation Name="Segment 111 Lat Withdrawal 3" Class="hec2.model.DataLocation" DssPath="/W2:Lewiston_qwd.csv/Segment 111 Lat Withdrawal 3/Flow-QWD//1HOUR/alt:ap:CeQualW2-Segment 111 Lat Withdrawal 3/" ComputeType="Computed" Model="DSS File" Parameter="Flow-QWD" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="JCR-Generation Release" Class="hec2.model.DssDataLocation" DssPath="/MR Sac.-Whiskeytown Lake/JCR-Generation Release/Flow//1Hour/233.13.125.1.1/" ComputeType="Computed" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
-          <DssFile>shared\DMS_SacTrnHydroTS.dss</DssFile>
+        <DataLocation Name="CARR POWERHOUSE" Class="hec2.model.DssDataLocation" DssPath="/CLEAR CREEK/CARR POWERHOUSE/FLOW-RELEASE//1HOUR/sactrn_bc_script/" ComputeType="Computed" Parameter="FLOW-RELEASE" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\WTMP_SacTrn_Forecast.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
     <DataLocation Name="Branch 1 Struct Withdrawal 1" Class="hec2.model.DataLocation" DssPath="/W2:Lewiston_qot.csv/Branch 1 Struct Withdrawal 1/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 1/" ComputeType="Computed" Model="DSS File" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="LEW-Spill Release Hrly" Class="hec2.model.DssDataLocation" DssPath="/MR Sac.-Lewiston Res./LEW-Spill Release Hrly/Flow//1Hour/232.12.125.5.1/" ComputeType="Computed" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
-          <DssFile>shared\DMS_SacTrnHydroTS.dss</DssFile>
+        <DataLocation Name="LEWISTON RESERVOIR" Class="hec2.model.DssDataLocation" DssPath="/TRINITY RIVER/LEWISTON RESERVOIR/FLOW-RIVER RELEASE//1DAY/sactrn_bc_script/" ComputeType="Computed" Parameter="FLOW-RIVER RELEASE" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\WTMP_SacTrn_Forecast.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
     <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:TrinityCamp_met.csv/WB 1 Met/TAIR//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Model="DSS File" Parameter="TAIR" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="TCAC1 - CALC DATA-AIR TEMPERATURE" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-AIR TEMPERATURE/TEMP-AIR/01DEC2017/1HOUR/MERGEDFROM_MR SAC.-CLEAR CR. TO SAC R./" ComputeType="Computed" Parameter="TEMP-AIR" OutOfDate="false" PrevModelIndex="0">
-          <DssFile>shared\DMS_SacTrn_ResSim_Pre-Process.dss</DssFile>
+        <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR Sac.-Lewiston Res./TCAC1/Temp-Air//1Hour/MergedFrom_MR Sac.-Clear Cr. to Sac R./" ComputeType="Computed" Parameter="Temp-Air" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\WTMP_SacTrn_Forecast.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
     <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:TrinityCamp_met.csv/WB 1 Met/TDEW//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Model="DSS File" Parameter="TDEW" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="TCAC1 - CALC DATA-DEW POINT" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-DEW POINT/TEMP-DEWPOINT/01DEC2017/1HOUR/MERGEDFROM_MR SAC.-CLEAR CR. TO SAC R./" ComputeType="Computed" Parameter="TEMP-DEWPOINT" OutOfDate="false" PrevModelIndex="0">
-          <DssFile>shared\DMS_SacTrn_ResSim_Pre-Process.dss</DssFile>
+        <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR Sac.-Lewiston Res./TCAC1/Temp-DewPoint//1Hour/MergedFrom_MR Sac.-Clear Cr. to Sac R./" ComputeType="Computed" Parameter="Temp-DewPoint" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\WTMP_SacTrn_Forecast.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
     <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:TrinityCamp_met.csv/WB 1 Met/WS//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Model="DSS File" Parameter="WS" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="TCAC1-Wind Speed" Class="hec2.model.DssDataLocation" DssPath="/MR Sac.-Lewiston Res./TCAC1-Wind Speed/Speed-Wind//1Hour/232.5.133.1.1/" ComputeType="Computed" Parameter="Speed-Wind" OutOfDate="false" PrevModelIndex="0">
-          <DssFile>shared\DMS_SacTrnMet.dss</DssFile>
+        <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/sactrn_bc_script/" ComputeType="Computed" Parameter="SPEED-WIND" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\WTMP_SacTrn_Forecast.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
     <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:TrinityCamp_met.csv/WB 1 Met/PHI//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Model="DSS File" Parameter="PHI" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="TCAC1-WIND DIRECTION" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1-WIND DIRECTION/DIR-WIND-RADIANS/01DEC2015/1HOUR/232.5.133.1.2/" ComputeType="Computed" Parameter="DIR-WIND-RADIANS" OutOfDate="false" PrevModelIndex="0">
-          <DssFile>shared\DMS_SacTrnMet.dss</DssFile>
+        <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/DIR-WIND-RADIANS//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="DIR-WIND-RADIANS" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\WTMP_SacTrn_Forecast.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
     <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:TrinityCamp_met.csv/WB 1 Met/Cloud//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Model="DSS File" Parameter="Cloud" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="TCAC1 - CALC DATA-CLOUD COVER" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER/01JAN2015/1DAY/236.9.129.1.1/" ComputeType="Computed" Parameter="%-CLOUD COVER" OutOfDate="false" PrevModelIndex="0">
-          <DssFile>shared\DMS_SacTrnMet.dss</DssFile>
+        <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER//1DAY/sactrn_bc_script/" ComputeType="Computed" Parameter="%-CLOUD COVER" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\WTMP_SacTrn_Forecast.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
     <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:TrinityCamp_met.csv/WB 1 Met/SRO//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Model="DSS File" Parameter="SRO" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="TCAC1-SOLAR RADIATION" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1-SOLAR RADIATION/IRRAD-SOLAR/01DEC2015/1HOUR/232.5.135.1.1/" ComputeType="Computed" Parameter="IRRAD-SOLAR" OutOfDate="false" PrevModelIndex="0">
-          <DssFile>shared\DMS_SacTrnMet.dss</DssFile>
+        <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/sactrn_bc_script/" ComputeType="Computed" Parameter="IRRAD-SOLAR" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\WTMP_SacTrn_Forecast.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
     <DataLocation Name="WB 1 Bathymetry" Class="hec2.model.DataLocation" DssPath="/W2:Lewiston_bathy.csv/WB 1 Bathymetry/Elev-ELWS//1HOUR/alt:ap:CeQualW2-WB 1 Bathymetry/" ComputeType="Computed" Model="DSS File" Parameter="Elev-ELWS" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="LEW-Reservoir Elevation Hrly" Class="hec2.model.DssDataLocation" DssPath="/MR Sac.-Lewiston Res./LEW-Reservoir Elevation Hrly/Elev//1Hour/232.12.145.1.1/" ComputeType="Computed" Parameter="Elev" OutOfDate="false" PrevModelIndex="0">
-          <DssFile>shared\DMS_SacTrnHydroTS.dss</DssFile>
+        <DataLocation Name="Lewiston Reservoir" Class="hec2.model.DssDataLocation" DssPath="/TRINITY RIVER/Lewiston Reservoir/ELEV//1Month/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="ELEV" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared\WTMP_SacTrn_Forecast.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>

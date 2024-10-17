@@ -3,7 +3,7 @@
 TITLE C ...............................TITLE....................................
         Shasta Lake Temperature
         Shasta Lake
-        Simulation for 2019       
+        Simulation for 2016       
         Shasta Reservoir Model
         ES   04/12/23
         
@@ -25,16 +25,16 @@ MISCELL     NDAY SELECTC HABTATC ENVIRPC AERATEC INITUWL
              100     TCD     OFF     OFF     OFF     OFF
 
 TIME CON  TMSTRT   TMEND    YEAR
-         1.00000 366.000    2019
+         1.00000 367.000    2016
 
 DLT CON      NDT  DLTMIN DLTINTR
-               1 1.00000     OFF
+               1  1.0000     OFF
 
 DLT DATE    DLTD    DLTD    DLTD    DLTD    DLTD    DLTD    DLTD    DLTD    DLTD
            1.000
 
 DLT MAX   DLTMAX  DLTMAX  DLTMAX  DLTMAX  DLTMAX  DLTMAX  DLTMAX  DLTMAX  DLTMAX
-          60.000
+           60.00
 
 DLT FRN     DLTF    DLTF    DLTF    DLTF    DLTF    DLTF    DLTF    DLTF    DLTF
            1.000
@@ -78,7 +78,7 @@ TRANSPOR   SLTRC   THETA
 WB 1    ULTIMATE 0.55000
 
 HYD COEF      AX      DX    CBHE    TSED      FI   TSEDF   FRICC      Z0
-WB 1     1.00000 1.00000     0.6   6.000  0.0100   1.000   CHEZY 0.00100
+WB 1     1.00000 1.00000     0.6  6.0000  0.0100   1.000   CHEZY 0.00100
 
 EDDY VISC    AZC   AZSLC   AZMAX     FBC       E   ARODI STRCKLR BOUNDFR  TKECAL
 WB 1         TKE     IMP   1.000
@@ -129,8 +129,8 @@ BR 5
 STR ELEV    ESTR    ESTR    ESTR    ESTR    ESTR    ESTR    ESTR    ESTR    ESTR
 BR 1      316.08  317.60  311.20  304.80  287.12  280.72  274.32  252.98  248.72
           244.45  243.84  231.65  219.46  287.12  256.64  226.16  288.54  273.32    
-          254.09  245.56  237.74  228.45  212.00
-BR 2
+          254.09  245.56  237.74  228.45  212.00  
+BR 2     
 BR 3     
 BR 4
 BR 5     
@@ -138,7 +138,7 @@ BR 5
 STR WIDT    WSTR    WSTR    WSTR    WSTR    WSTR    WSTR    WSTR    WSTR    WSTR
 BR 1      102.00                                                           
                                                                    76.20   76.20
-           76.20   76.20   76.20   76.20        
+           76.20   76.20   76.20   76.20
 BR 2     
 BR 3     
 BR 4
@@ -259,7 +259,7 @@ SNP FREQ    SNPF    SNPF    SNPF    SNPF    SNPF    SNPF    SNPF    SNPF    SNPF
 WB 1    .0416667
 
 SNP SEG     ISNP    ISNP    ISNP    ISNP    ISNP    ISNP    ISNP    ISNP    ISNP
-WB 1          26      29      32      47      51     149     217      76      77
+WB 1          26      29      32      47      58      65      71      76      77            
 
 SCR PRINT   SCRC    NSCR
 WB 1          ON       1
@@ -303,7 +303,7 @@ VPL DATE    VPLD    VPLD    VPLD    VPLD    VPLD    VPLD    VPLD    VPLD    VPLD
 WB 1      1.0000
 
 VPL FREQ    VPLF    VPLF    VPLF    VPLF    VPLF    VPLF    VPLF    VPLF    VPLF
-WB 1     0.04167
+WB 1    0.083333
 
 CPL PLOT    CPLC    NCPL TECPLOT
 WB 1         OFF       1     OFF
@@ -312,7 +312,7 @@ CPL DATE    CPLD    CPLD    CPLD    CPLD    CPLD    CPLD    CPLD    CPLD    CPLD
 WB 1       1.000
 
 CPL FREQ    CPLF    CPLF    CPLF    CPLF    CPLF    CPLF    CPLF    CPLF    CPLF
-WB 1     0.04167
+WB 1      0.0417
 
 FLUXES      FLXC    NFLX
 WB 1         OFF       0
@@ -1036,7 +1036,7 @@ PRF FILE..................................PRFFN.................................
 WB 1    prf.opt
 
 VPL FILE..................................VPLFN.................................
-WB 1    vpl.w2l
+WB 1    vpl.opt - not used
 
 CPL FILE..................................CPLFN.................................
 WB 1    cpl1.opt
