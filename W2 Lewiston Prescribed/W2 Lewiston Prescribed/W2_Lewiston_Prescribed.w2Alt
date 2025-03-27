@@ -117,7 +117,7 @@
     <DataLocation Name="WB 1 Bathymetry" Class="hec2.model.DataLocation" DssPath="/W2:Lewiston_bathy.csv/WB 1 Bathymetry/Elev-ELWS//1HOUR/alt:ap:CeQualW2-WB 1 Bathymetry/" ComputeType="Computed" Model="DSS File" Parameter="Elev-ELWS" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="Lewiston Reservoir" Class="hec2.model.DssDataLocation" DssPath="/TRINITY RIVER/Lewiston Reservoir/ELEV//1Month/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="ELEV" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="Lewiston Reservoir" Class="hec2.model.DssDataLocation" DssPath="/TRINITY RIVER/Lewiston Reservoir/ELEV//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="ELEV" OutOfDate="false" PrevModelIndex="0">
           <DssFile>shared\WTMP_SacTrn_Forecast.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>
