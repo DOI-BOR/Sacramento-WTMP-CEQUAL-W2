@@ -70,8 +70,8 @@
 
  Meteorological Parameters
    Waterbody 1
-     Latitude                  [LAT] =   40.72
-     Longitude                [LONG] =  122.42
+     Latitude                  [LAT] =   40.61
+     Longitude                [LONG] =  122.45
 
 
 Meteorological Data Input Summary
@@ -185,17 +185,17 @@ Inflow/Outflow
    Restart    =                                                                         
    Withdrawal =                                                                         
    Waterbody 1
-     Bathymetry           = Keswick_Res_2016Bathy_101617(CHEZY).npt                                 
-     Meteorology          = met_PST_16.npt                                                          
+     Bathymetry           = Keswick_Res_bathy.npt                                                   
+     Meteorology          = met_PST.npt                                                             
      Vertical profile     =                                                                         
      Longitudinal profile =                                                                         
    Branch 1
-     Inflow                               = QinShD_PST_16(041323).npt                                               
-     Inflow temperature                   = TinShD_PST_16_upd.npt                                                   
+     Inflow                               = QinShD_PST.npt                                                          
+     Inflow temperature                   = TinShD_PST.npt                                                          
      Inflow concentrations                =                                                                         
-     Outflow                              = Qout_PST_16.npt                                                         
-     Distributed tributary inflows        = Qdt_PST_16(041323).npt                                                  
-     Distributed tributary temperatures   = Tdt_PST_16_upd.npt                                                      
+     Outflow                              = Qout_PST.npt                                                            
+     Distributed tributary inflows        = Qdt_PST.npt                                                             
+     Distributed tributary temperatures   = Tdt_PST.npt                                                             
      Distributed tributary concentrations =                                                                         
      Precipitation                        =                                                                         
      Precipitation temperatures           =                                                                         
@@ -207,8 +207,8 @@ Inflow/Outflow
      Downstream head temperatures         =                                                                         
      Downstream head concentrations       =                                                                         
    Branch 2
-     Inflow                               = QinSCr_PST_16.npt                                                       
-     Inflow temperature                   = TinSCr_PST_16.npt                                                       
+     Inflow                               = QinSCr_PST.npt                                                          
+     Inflow temperature                   = TinSCr_PST.npt                                                          
      Inflow concentrations                =                                                                         
      Outflow                              =                                                                         
      Distributed tributary inflows        =                                                                         
@@ -227,7 +227,7 @@ Inflow/Outflow
  Output Filenames
    Error       = pre.err                                                                 
    Warning     = pre.wrn                                                                 
-   Time series = tsr_16.opt                                                              
+   Time series = tsr.opt                                                                 
    Withdrawal  = wdo.opt                                                                 
    Waterbody 1
      Snapshot     = snp.opt                                                                 
