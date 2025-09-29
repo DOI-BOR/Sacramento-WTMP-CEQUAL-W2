@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CeQualW2Alt Name="W2 Shasta">
+<CeQualW2Alt Name="W2 Shasta" W2Version="v4.5">
   <Description />
   <DataLocations>
     <DataLocation Name="Branch 1 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:qin_br1.npt/Branch 1 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 1 Inflow/" ComputeType="Computed" Model="DSS File" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
@@ -341,7 +341,7 @@
     <DataLocation Name="Auto Port Selection" Class="hec2.model.DataLocation" DssPath="/W2:dynsplit_selective%X%.npt/Auto Port Selection/Temp-Target//1HOUR/alt:ap:CeQualW2-Auto Port Selection/" ComputeType="Computed" Model="DSS File" Parameter="Temp-Target" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="W2 Shasta" Program="CeQualW2" />
       <DownStreamLocation>
-        <DataLocation Name="SHASTA" Class="hec2.model.DssDataLocation" DssPath="/USBR/SHASTA/TEMP-WATER-TARGET//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER-TARGET" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="SHASTA" Class="hec2.model.DssDataLocation" DssPath="/USBR/SHASTA/TEMP-WATER-TARGET-W2-UPSTREAM//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER-TARGET-W2-UPSTREAM" OutOfDate="false" PrevModelIndex="0">
           <DssFile>shared\WTMP_SacTrn_Forecast.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>
